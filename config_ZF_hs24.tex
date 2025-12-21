@@ -1,0 +1,181 @@
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage[german]{datetime}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{kantlipsum}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{chngcntr}
+\usepackage{tocloft}
+\usepackage{titlepic}
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{url}
+\usepackage[colorlinks=false]{hyperref}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{minted}
+\usepackage{tcolorbox}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{trsym,trfsigns}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+% In die Präambel (vor \begin{document}):
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % falls du kein lualatex/xelatex nutzt
+\usepackage{xcolor}
+\usepackage{listings}
+
+% Structured Text (IEC 61131-3) Sprache definieren
+\lstdefinelanguage{StructuredText}{
+morekeywords=[1]{
+PROGRAM, FUNCTION, FUNCTION_BLOCK, VAR, VAR_INPUT, VAR_OUTPUT, VAR_IN_OUT,
+VAR_TEMP, VAR_GLOBAL, VAR_EXTERNAL, END_VAR, END_PROGRAM, END_FUNCTION,
+END_FUNCTION_BLOCK, IF, THEN, ELSIF, ELSE, END_IF, CASE, OF, END_CASE,
+FOR, TO, BY, DO, END_FOR, WHILE, END_WHILE, REPEAT, UNTIL, END_REPEAT,
+RETURN, EXIT, WITH, CONSTANT, RETAIN, AT,
+TRUE, FALSE, AND, OR, XOR, NOT, MOD
+},
+morekeywords=[2]{BOOL, BYTE, WORD, DWORD, LWORD, SINT, INT, DINT, LINT, USINT, UINT, UDINT, ULINT, REAL, LREAL, TIME, DATE, TOD, DT, STRING, WSTRING},
+sensitive=false,
+morecomment=[l]{//},
+morecomment=[s]{(*}{*)},
+morestring=[b]",
+}
+
+% Globaler Style
+\lstdefinestyle{st}{
+language=StructuredText,
+basicstyle=\ttfamily\small,
+keywordstyle=[1]\color{blue!70!black}\bfseries,
+keywordstyle=[2]\color{teal!70!black},
+commentstyle=\color{gray!70!black}\itshape,
+stringstyle=\color{orange!70!black},
+numbers=left,
+numberstyle=\tiny\color{gray},
+stepnumber=1,
+numbersep=8pt,
+showstringspaces=false,
+tabsize=2,
+breaklines=true,
+breakatwhitespace=true,
+xleftmargin=1.5em,
+xrightmargin=0.5em,
+frame=single,
+framerule=0.4pt,
+rulecolor=\color{black!20},
+captionpos=b,
+keepspaces=true,
+columns=fullflexible,
+% für Umlaute im Code:
+literate=
+{ä}{{"a}}1 {ö}{{"o}}1 {ü}{{"u}}1
+{Ä}{{"A}}1 {Ö}{{"O}}1 {Ü}{{"U}}1
+{ß}{{\ss}}1
+}
+
+% Optional: ein Shortcut
+\newcommand{\stlisting}{\lstset{style=st}}
+
+
+% Definition der Rot töne
+\definecolor{DarkRed}{HTML}{8B0000}
+\definecolor{LightRed}{HTML}{FFDDDD}
+
+% Definition der Orange-Töne
+\definecolor{VeryLightOrange}{HTML}{F0F0F0}
+\definecolor{LightOrange}{HTML}{D9E9CF}
+\definecolor{MediumOrange}{HTML}{B6CEB4}
+\definecolor{DarkOrange}{HTML}{96A78D}
+
+% Definition der Blau-Töne
+\definecolor{LightBlue}{HTML}{EAF7FF}
+\definecolor{DarkBlue}{HTML}{005F9E}
+
+%-----Seitenränder-----%
+\usepackage[a4paper, left=1cm, right=1cm, top=2cm, bottom=2cm]{geometry}
+
+%-----Spalteneinstellungen-----%
+\setlength{\columnsep}{20pt}
+\setlength{\columnseprule}{0.5pt} % Dicke der vertikalen Linie
+
+
+%-----Titelformatierungen-----%
+\titleformat{\chapter}{\sffamily\Large\bf\sffamily\rlap{\color{DarkOrange}\rule[-0.5ex]{1\linewidth}{3ex}\vspace{-3ex}}\sffamily\Large\bf\sffamily\color{black}}{\thechapter}{15pt}{}
+\titleformat{\section}{\sffamily\large\bf\sffamily\rlap{\color{MediumOrange}\rule[-0.5ex]{\linewidth}{3ex}\vspace{-2.8ex}}\sffamily\large\bf\sffamily\color{black}}{\thesection}{3pt}{}
+\titleformat{\subsection}{\sffamily\rlap{\color{LightOrange}\rule[-0.5ex]{\linewidth}{3ex}\vspace{-2.6ex}}\sffamily\sffamily\color{black}}{\thesubsection}{3pt}{}
+\titleformat{\subsubsection}{\sffamily\rlap{\color{blue!10!white}\rule[-0.5ex]{\linewidth}{3ex}\vspace{-3ex}}\sffamily\sffamily\color{black}}{\thesubsection}{3pt}{}
+
+%\titleformat{\subsubsection}{\sffamily}{\thesubsection}{10pt}{}
+\titlespacing*{\chapter}{5pt}{5pt}{5pt}
+\titlespacing*{\section}{5pt}{5pt}{5pt}
+\titlespacing*{\subsection}{5pt}{5pt}{5pt}
+\renewcommand{\cfttoctitlefont}{\Huge\bf\sffamily}
+\renewcommand{\cftloftitlefont}{\sffamily\section}
+\renewcommand{\cftlottitlefont}{\sffamily\section}
+\addtocontents{lof}{\protect\vspace{-3\baselineskip}}
+\addtocontents{lot}{\protect\vspace{-3\baselineskip}}
+\addtocontents{toc}{\protect\vspace{-3\baselineskip}}
+\captionsetup{font={sf}}
+\renewcommand{\normalsize}{\fontsize{8}{8}\selectfont}
+\titleclass{\chapter}{straight}
+
+%-----Kopf- und Fusszeile-----%
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\today}
+\chead{}
+\rhead{IAUT - Eric Lindegger}
+\renewcommand{\headrulewidth}{0.1pt}
+\lfoot{HSLU T\&A}
+\cfoot{}
+\rfoot{\thepage}
+\renewcommand{\footrulewidth}{0.1pt}
+%Kopf- und Fusszeile erzwingen überall
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+
+%-----Zähler-----%
+\newcounter{simplecount}
+\setcounter{simplecount}{0}
+\renewcommand{\theequation}{\arabic{simplecount}}
+\newcommand{\owncount}{\refstepcounter{simplecount}}
+
+\newcounter{simplecount2}
+\setcounter{simplecount2}{0}
+\renewcommand{\thetable}{\arabic{simplecount2}}
+\newcommand{\tabularcount}{\refstepcounter{simplecount2}}
+
+\newcounter{simplecount3}
+\setcounter{simplecount3}{0}
+\renewcommand{\thefigure}{\arabic{simplecount3}}
+\newcommand{\figurecount}{\refstepcounter{simplecount3}}
+
+%-----Abbildungsbeschriftung-----%
+\counterwithout{figure}{chapter}
+
+\renewcommand{\cftfigpresnum}{Abbildung }
+\renewcommand{\cfttabpresnum}{Tabelle }
+
+\renewcommand{\cftfigaftersnum}{:}
+\renewcommand{\cfttabaftersnum}{:}
+
+\setlength{\cftfignumwidth}{2.5cm}
+\setlength{\cfttabnumwidth}{2.5cm}
+
+\setlength{\cftfigindent}{0cm}
+\setlength{\cfttabindent}{0cm}
+
+\renewcommand{\figurename}{Abbbildung}
+\renewcommand{\tablename}{Tabelle}
+
+\setlength{\parindent}{0pt}

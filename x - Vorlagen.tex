@@ -1,0 +1,39 @@
+
+%Tabelle
+\begin{table}[H]
+    \centering
+    \tabularcount
+    \caption{Das ist eine Tabelle}
+    \label{Tabelle xx}
+    \begin{tabular}{| c | c | c |}
+        \hline
+        Spalte 1 & Spalte 2 & Spalte 3\\
+        \hline
+        Das & ist & ein Test\\
+        \hline
+    \end{tabular}
+\end{table}
+
+%Formel
+\begin{equation*}
+    \owncount
+    R_{In} = \frac{R_{1}\cdot\frac{U}{R}}{I_{1}+I_{2}}
+\end{equation*}
+
+%Absatz
+\textnormal{UnserText}
+
+%Bild
+\begin{figure}[H]
+    \centering
+    \includegraphics[width =  \textwidth]{Diagramme/blockschaltbild.pdf}
+\end{figure}
+
+%Codebeispiel
+%Codebeispiel
+\begin{minted}[frame=lines, framesep=1mm, baselinestretch=1.5, fontsize=\footnotesize, linenos=true, numbersep=2pt,]{python}
+def hello_world():
+    print("Hello, world!")
+
+hello_world()
+\end{minted}
