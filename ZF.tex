@@ -166,6 +166,55 @@ ELSE
     tmp := iVarIn;
 END_IF
 \end{lstlisting}
+\newcolumn
+
+\subsection{Programm}
+\textnormal{Programme können als Funktionen aufgerufen werden und besitzen keinen Rückgabewert.}
+
+\begin{lstlisting}
+PROGRAM ProgramName
+VAR
+    bTrig : BOOL;
+    iVal : INT;
+END_VAR
+
+IF(bTrig = TRUE) THEN
+    iVal := 15;
+END_IF
+END_PROGRAM
+\end{lstlisting}
+
+\subsection{Funktionsblock}
+\textnormal{Ein Funktionsblock ist Zustandsbehaftet: Interne Variablen behalten ihren Wert über die SPS-Zyklen weg. Jede Instanz besitzt einen eigenen Speicher. Jedoch müssen die Speicher instanziert werden.}
+
+\begin{lstlisting}
+FUNCTION_BLOCK Count
+VAR_INPUT
+    bTrig : BOOL;
+END_VAR
+VAR
+    iCount : INT;
+END_VAR
+
+IF bTrig = TRUE THEN
+    iCount := iCount + 1;
+END_IF
+\end{lstlisting}
+
+\subsection{Funktion}
+\textnormal{Eine Funktion kann ohne Instanzierung verwendet werden. Eine Funktion besitzt keine statische Werte, dafür einen Rückgabewert, welcher auf den Funktionsnamen zugewiesen wird.}
+
+\begin{lstlisting}
+FUNCTION fFunc : INT // Ruckgabewert
+VAR_INPUT
+    iTime : INT;
+    iT : INT;
+END_VAR
+
+iTmp := iTime;
+fFunc := iTime / iT;
+\end{lstlisting}
+\newcolumn
 
 \section{Variablentypen}
 
@@ -202,20 +251,50 @@ END_IF
     \end{tabular}
 \end{table}
 
+\subsection{Array}
+\begin{lstlisting}
+VAR
+    aValues : ARRAY[0..99] OF INT;
+END_VAR
+\end{lstlisting}
+
 \subsection{DUT - Data Unit Type}
-\textnormal{Über DUT können benutzerdefinierte Datentypen angelegt werden. Die relevanten sind \mintinline{ST}{STRUCT} und \mintinline{ST}{ENUM}. Durch diese Typen kann ein Programm bedeutend lesbarer gestaltet werden.}
+\textnormal{Über DUT können benutzerdefinierte Datentypen angelegt werden. Die relevanten sind \mintinline{ST}{STRUCT} und \mintinline{ST}{ENUM}. Durch diese Typen kann ein Programm bedeutend lesbarer gestaltet werden. Für die Erstellung eines DUTs wird ein neues File in der DUT Ordnerstruktur erstellt. Die Definition geht wie folgt:}
 
-\subsection{Programm}
-\textnormal{Hallo das ist das erste Mal wo ich von Linux aus das hier mache. So far so good, es geht wirklich gut.}
+\begin{lstlisting}
+// Struct
+TYPE stDataType:
+STRUCT
+    iVar1 : INT;
+    iPointX : INT;
+    iPointY : INT;
+END_STRUCT;
+END_TYPE
+\end{lstlisting}
 
-\subsection{Funktionsblock}
+\begin{lstlisting}
+// Enumeration
+TYPE eSystemState:
+(
+    None, // = 0 - default
+    init, // = 1
+    run
+) := init; // default state
+END_TYPE
+\end{lstlisting}
+\newcolumn
 
-\subsection{Funktion}
+\subsection{Globale Variablen Liste (GVL)}
+\textnormal{Die GVL deklariert Variablen, welche in jedem Programm, Funktionsblock und Funktion aufrufbar. Vielfach machts Sinn die In-/Outputs, welche mit der Hardware kommunizieren in einer GVL zu deklarieren.}
 
-\section{Variablen-Scope}
+\subsection{Type Casting}
+\textnormal{Variablentypen können mit Hilfe von Casting Funktionen umgewandelt werden. Fast alle Typen können gewandelt werden:}
 
-\subsection{Globale Variablen}
-\textnormal{In einer globalen Variablenliste \mintinline{ST}{GVL} werden global verwendete Variablen deklariert. Sinnvoll ist dies zum Beispiel für: SPS Zykluszeit, Ein-/Ausgänge oder sonstige Konstanten, welche überall im Code wieder verwendet und gegebenenfalls ändern.}
+\begin{lstlisting}
+rRealVal := INT_TO_REAL(iVal);
+\end{lstlisting}
+
+\textnormal{Casting ist die zielführende Methode, um keine Fehler im Implementieren des Programms zu generieren. TwinCat hat implizite Casts nicht so gerne.}
 
 \section{Conditional Statements}
 
@@ -270,6 +349,7 @@ WHILE iCounter <> 0 DO
     iCounter := iCounter - 1;
 END_WHILE;
 \end{lstlisting}
+\newcolumn
 
 \subsection{REPEAT}
 \begin{tcolorbox}[colback=VeryLightOrange,colframe=DarkOrange,title=REPEAT-Schleife]
@@ -322,7 +402,60 @@ res := ROL(bByte,3);    // Circular Shift Right
 \textnormal{Die Shift-Operationen können mit allen gängigen Datentypen verwendet werden.}
 
 \section{Limit}
+\textnormal{Die Limit-Funktion limitiert die Eingangsvariable innerhalb von einer Minimal- und Maximalwert. Die Funktion kann wie folgt verwendet werden:}
 
+\begin{lstlisting}
+rUsat := LIMIT(umin, rU, umax);
+// rU wird von umin und umax limitiert
+\end{lstlisting}
+\newcolumn
 
+\section{Timer}
+\textnormal{Verschiedene Timer Module können direkt aus TwinCat instanziiert werden. Diese haben jeweils verschiedene Verhaltensmuster und sind für andere Anwendungen nützlich.}
+
+\subsection{Timer Off-Delay (TOF)}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width =  \columnwidth]{img/Bildschirmfoto vom 2025-12-22 15-02-56.png}
+\end{figure}
+
+\begin{lstlisting}
+VAR
+    fbTOF : TOF;
+END_VAR    
+
+fbTOF(IN := bTrig, PT := T#500ms);
+bOut := fbTOF.Q;
+\end{lstlisting}
+
+\subsection{Timer On-Delay (TON)}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width =  \columnwidth]{img/Bildschirmfoto vom 2025-12-22 15-10-29.png}
+\end{figure}
+
+\begin{lstlisting}
+VAR
+    fbTON : TON;
+END_VAR    
+
+fbTON(IN := bTrig, PT := T#500ms);
+bOut := fbTON.Q;
+\end{lstlisting}
+
+\subsection{Timer Pulse Generator (TP)}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width =  \columnwidth]{img/Bildschirmfoto vom 2025-12-22 15-14-37.png}
+\end{figure}
+
+\begin{lstlisting}
+VAR
+    fbTP : TP;
+END_VAR    
+
+fbTP(IN := bTrig, PT := T#500ms);
+bOut := fbTP.Q;
+\end{lstlisting}
 
 \chapter{Beispiel Code}

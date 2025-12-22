@@ -14,23 +14,28 @@
 \contentsline {chapter}{\numberline {5}FSM - Finite State Machine}{3}{chapter.5}%
 \contentsline {chapter}{\numberline {6}ST-Language}{3}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Grundaufbau}{3}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Variablentypen}{3}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}System Datentypen}{3}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}DUT - Data Unit Type}{4}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Programm}{4}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Funktionsblock}{4}{subsection.6.2.4}%
-\contentsline {subsection}{\numberline {6.2.5}Funktion}{4}{subsection.6.2.5}%
-\contentsline {section}{\numberline {6.3}Variablen-Scope}{4}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Globale Variablen}{4}{subsection.6.3.1}%
-\contentsline {section}{\numberline {6.4}Conditional Statements}{4}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}If/Else}{4}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Switch-Case}{4}{subsection.6.4.2}%
-\contentsline {section}{\numberline {6.5}Schleifen}{4}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}WHILE}{4}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.5.2}REPEAT}{4}{subsection.6.5.2}%
-\contentsline {subsection}{\numberline {6.5.3}FOR}{4}{subsection.6.5.3}%
-\contentsline {subsection}{\numberline {6.5.4}Schleifen Modifikatoren}{4}{subsection.6.5.4}%
-\contentsline {chapter}{\numberline {7}TwinCat}{4}{chapter.7}%
+\contentsline {subsection}{\numberline {6.1.1}Programm}{4}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Funktionsblock}{4}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Funktion}{4}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Variablentypen}{4}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}System Datentypen}{4}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Array}{4}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}DUT - Data Unit Type}{4}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Globale Variablen Liste (GVL)}{5}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}Type Casting}{5}{subsection.6.2.5}%
+\contentsline {section}{\numberline {6.3}Conditional Statements}{5}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}If/Else}{5}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Switch-Case}{5}{subsection.6.3.2}%
+\contentsline {section}{\numberline {6.4}Schleifen}{5}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}WHILE}{5}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}REPEAT}{5}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}FOR}{5}{subsection.6.4.3}%
+\contentsline {subsection}{\numberline {6.4.4}Schleifen Modifikatoren}{5}{subsection.6.4.4}%
+\contentsline {chapter}{\numberline {7}TwinCat}{5}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Bitshifting}{5}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Limit}{5}{section.7.2}%
-\contentsline {chapter}{\numberline {8}Beispiel Code}{5}{chapter.8}%
+\contentsline {section}{\numberline {7.3}Timer}{6}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Timer Off-Delay (TOF)}{6}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Timer On-Delay (TON)}{6}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Timer Pulse Generator (TP)}{6}{subsection.7.3.3}%
+\contentsline {chapter}{\numberline {8}Beispiel Code}{6}{chapter.8}%

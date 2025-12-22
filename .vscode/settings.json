@@ -1,12 +1,13 @@
 {
   "latex-workshop.latex.tools": [
     {
-      "name": "pdflatex-shell-escape",
-      "command": "pdflatex",
+      "name": "latexmk",
+      "command": "latexmk",
       "args": [
+        "-pdf",
         "-shell-escape",
         "-interaction=nonstopmode",
-        "-file-line-error",
+        "-synctex=1",
         "%DOC%"
       ]
     }
@@ -14,15 +15,10 @@
 
   "latex-workshop.latex.recipes": [
     {
-      "name": "pdflatex (shell-escape)",
-      "tools": [
-        "pdflatex-shell-escape"
-      ]
+      "name": "latexmk (shell-escape)",
+      "tools": ["latexmk"]
     }
   ],
 
-  "latex-workshop.latex.autoBuild.run": "never",
-  "latex-workshop.latex.recipe.default": "pdflatex (shell-escape)",
-  "workbench.preferredDarkColorTheme": "Default Light+",
-  "window.autoDetectColorScheme": true
+  "latex-workshop.latex.recipe.default": "latexmk (shell-escape)"
 }
