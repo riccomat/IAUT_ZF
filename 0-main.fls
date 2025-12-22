@@ -628,6 +628,16 @@ INPUT ./img/Bildschirmfoto vom 2025-12-22 15-14-37.png
 INPUT ./img/Bildschirmfoto vom 2025-12-22 15-14-37.png
 INPUT ./img/Bildschirmfoto vom 2025-12-22 15-14-37.png
 INPUT ./img/Bildschirmfoto vom 2025-12-22 15-14-37.png
+INPUT ./plt/PT1-Freq.pdf
+INPUT ./plt/PT1-Freq.pdf
+INPUT ./plt/PT1-Freq.pdf
+INPUT ./plt/PT1-Freq.pdf
+INPUT ./plt/PT1-Freq.pdf
+INPUT ./plt/PT2-Freq.pdf
+INPUT ./plt/PT2-Freq.pdf
+INPUT ./plt/PT2-Freq.pdf
+INPUT ./plt/PT2-Freq.pdf
+INPUT ./plt/PT2-Freq.pdf
 INPUT 0-main.aux
 INPUT ./ZF.aux
 INPUT ./ZF.aux
@@ -648,7 +658,11 @@ INPUT /home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx2488.600
 INPUT /home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk
 INPUT /home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1200.600pk
 INPUT /home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1440.600pk
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb

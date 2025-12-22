@@ -129,11 +129,7 @@
 \section{EN 61499}
 \textnormal{Diese Norm stellt eine objektorientierte Erweiterung der EN61131 dar.}
 
-\chapter{Digitale Regelung}
 
-\chapter{FSM - Finite State Machine}
-
-\chapter{ST-Language}
 \textnormal{Dieses Kapitel fasst den Aufbau und Syntax der SPS-Programmiersprache ST zusammen.}
 
 \section{Grundaufbau}
@@ -457,5 +453,133 @@ END_VAR
 fbTP(IN := bTrig, PT := T#500ms);
 bOut := fbTP.Q;
 \end{lstlisting}
+
+\chapter{Digitale Regelung}
+\textnormal{Für Automationsanwendungen werden sehr häufig PID-Regler verwendet. Für eine digitale Regelung muss der Prozess und der Regler diskretisiert werden. Verschiedene Diskretisierungsmethoden existieren.}
+
+\section{Laplace Diskretisierung}
+\textnormal{Um ein System in Laplace Bereich zu diskretisieren (in den z-Bereich) zu transformieren existieren verschiedene Methoden. Diese sind hier aufgeführt.}
+
+\subsection{Rückwärts-Rechteckregel}
+\begin{equation*}
+    s = \frac{z-1}{T_Sz} = \frac{1-z^{-1}}{T_S}
+\end{equation*}
+\textnormal{Wobei $T_S$ die Zykluszeit der SPS ist. Diese ist standardmässig 10 ms. Gängigste Art zu diskretisieren}
+
+\subsection{Vorwärtsrechteck-Regel}
+\begin{equation*}
+    s = \frac{z-1}{T_S}
+\end{equation*}
+\textnormal{Für Regelung eine ungeeignete Diskretisierungsmethode.}
+
+\subsection{Trapezoidal-Regel (Tustin Approximation)}
+\begin{equation*}
+    s = \frac{2}{T}\frac{z-1}{z+1}
+\end{equation*}
+
+\section{PT1-Prozess}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width =  \columnwidth]{plt/PT1-Freq.pdf}
+\end{figure}
+
+\textnormal{PT1 Glieder besitzen eine Phasenverschiebung von 90$^\circ$ bzw. $\frac{\pi}{2}$. Die Grenzfrequenz liegt bei $\omega_0 = 2\pi\tau$.}
+
+\begin{equation*}
+    G(s) = \frac{1}{1+\tau s} \rightarrow y[k] = a_1 x[k] - a_2 y[k-1]
+\end{equation*}
+\begin{equation*}
+    \text{Mit: }a_1 = \frac{T_S}{T_S+\tau} \quad a_2 = \frac{\tau}{T_S + \tau}
+\end{equation*}
+
+\section{PT2-Prozess}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width =  \columnwidth]{plt/PT2-Freq.pdf}
+\end{figure}
+
+\textnormal{Mit zunehmender Dämpfung $d$ sinkt die Resonanz bei der Grenzfrequenz $\omega_0$. Die Phasenverschiebung ist $180^\circ$ respektive $\pi$.}
+\begin{equation*}
+    G(s)=\frac{\omega_0^2}{s^2+2d\omega_0s+\omega_0^2}
+\end{equation*}
+
+\textnormal{Diskretisiert:}
+\begin{equation*}
+    y[k] = \frac{a_3}{a_1}x[k] - \frac{a_2}{a_1}y[k-1] - \frac{1}{a_1} y[k-2]
+\end{equation*}
+\begin{equation*}
+    \text{Mit: }a_1 = 1+2d\omega_0T_s + \omega_0^2 \quad a_2 = -2-2d\omega_0T_s \quad a_3 = T_s^2\omega_0^2
+\end{equation*}
+
+\section{Diskreter PID-Regler}
+\textnormal{Der PID-Regler muss auch diskretisiert werden. Der zeitkontinuierliche PID-Regler hat die Form:}
+\begin{equation*}
+    C(s) = \frac{U(s)}{E(s)} = k_P \left( 1 + \frac{1}{T_i s} + \frac{T_ds}{\frac{T_d}{N}s+1} \right)
+\end{equation*}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{l l}
+        \textbf{Legende:}\\
+        $k_P$:&Reglerverstärkung\\
+        $T_i$:&Nachstellzeit [s]\\
+        $T_d$:&Vorhaltzeit [s]\\
+        $N$:&$\frac{T_d}{N}$ ist die Zeitkonstante des Filters
+    \end{tabular}
+\end{table}
+
+\subsection{P-Anteil}
+\textnormal{Der diskretisierte P-Anteil ist somit:}
+\begin{equation*}
+    u_P[k] = k_P \cdot e[k]
+\end{equation*}
+
+\subsection{I-Anteil}
+\textnormal{Der diskretisierte I-Anteil des Reglers ist:}
+\begin{equation*}
+    u_I = u_I[k-1] + \frac{k_PT_s}{T_i} e[k]
+\end{equation*}
+
+\subsection{D-Anteil}
+\textnormal{Der diskretisierte D-Anteil des Reglers ist:}
+\begin{equation*}
+    u_D = \frac{k_P\cdot T_d}{T_s}(e[k]-e[k-1])
+\end{equation*}
+
+\begin{tcolorbox}[colback=VeryLightOrange,colframe=DarkOrange,title=Kompletter diskreter PID-Regler]
+\textnormal{Der diskretisierte PID-Regler ist damit zusammengesetzt:}
+\begin{equation*}
+    u = u_P + u_I + u_D
+\end{equation*}
+\textnormal{Die vorhergehenden Fehler und Stellgrössen müssen immer mitgeführt werden.}
+\end{tcolorbox}
+
+\section{Stellgrössensättigung}
+\textnormal{Fast alle Stellgrössen sind in ihrem Output limitiert. Damit die Hardware keinen Schaden nehmen kann, muss die Stellgrösse in der Software gesättigt werden. Die Sättigungsfunktion funktioniert anhand eines einfachen mathematischen Prinzips:}
+\begin{equation*}
+    u_{sat}[k] = 
+    \begin{cases}
+        u_{max},& \text{wenn }u[k] > u_{max}\\
+        u_{min},& \text{wenn }u[k] < u_{min}\\
+        u[k], & \text{sonst}
+    \end{cases}
+\end{equation*}
+
+\textnormal{Die Stellgrössensättigung generiert ein neues Problem: der I-Anteil kann sich in die Unendlichkeit aufintegrieren. Um das Problem einzugrenzen, wird ein Antireset-Windup (ARW) implementiert. Das Sättigungsverfahren wird in ST wie folgt gelöst:}
+
+\begin{lstlisting}
+usat := LIMIT(umin, u, umax);
+\end{lstlisting}
+
+\subsection{Antireset-Windup (ARW)}
+\textnormal{Wird ein ARW implementiert, integriert sich der I-Anteil nicht mehr über das Limit heraus. Der Regler ist damit viel reaktiver. Der I-Anteil mit ARW ist somit:}
+\begin{equation*}
+    u_I[k] = u_I[k-1]+\frac{k_PT_s}{T_i}e[k] + \frac{T_s}{T_r}(u[k]-u_{nosat}[k])
+\end{equation*}
+\textnormal{Wobei $u_{nosat}$ der gesamte PID-Wert ohne Sättigung ist.}
+
+\chapter{FSM - Finite State Machine}
 
 \chapter{Beispiel Code}
