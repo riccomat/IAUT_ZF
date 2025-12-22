@@ -169,6 +169,39 @@ END_IF
 
 \section{Variablentypen}
 
+\subsection{System Datentypen}
+\textnormal{Die gängigen Datentypen sind auch in ST vorhanden. Die Tabelle fasst die Datentypen zusammen:}
+
+\begin{table}[H]
+    \centering
+    \tabularcount
+    \begin{tabular}{| p{0.7cm} | p{1.6cm} | p{1.9cm}| p{0.6cm} | p{2cm}|}
+        \hline
+        Typ & Min & Max & Bits & Bemerkung\\
+        \hline
+        \mintinline{C}{bool}&0&1&8&Nur 1 / 0 / \mintinline{C}{TRUE} / \mintinline{C}{FALSE} sind gültig!\\\hline
+        \mintinline{C}{BYTE}&0&255&8&\\\hline
+        \mintinline{C}{WORD}&0&65535&16&\\\hline
+        \mintinline{C}{DWORD}&0&4294967295&32&\\\hline
+        \mintinline{C}{SINT}&-128&127&8&\\\hline
+        \mintinline{C}{USINT}&0&255&8&\\\hline
+        \mintinline{C}{INT}&-32768&32767&16&\\\hline
+        \mintinline{C}{UINT}&0&65535&16&\\\hline
+        \mintinline{C}{DINT}&$-$2147483648&2147483647&32&\\\hline
+        \mintinline{C}{UDINT}&0&4294967295&32&\\\hline
+        \mintinline{C}{REAL}&$-3.4\cdot10^{38}$&$-3.4\cdot10^{38}$&64&\\\hline
+        \mintinline{C}{LREAL}&$-1.8\text{E}+308$&$1.8\text{E}+308$&64&\\\hline
+        \mintinline{C}{STRING}&$-$&$-$&$n+1$&fügt Nullterminierung an.\\\hline
+        \mintinline{C}{TIME}&\mintinline{C}{T#0ms}&\mintinline{C}{T#71582m}&32&\\
+        &&\mintinline{C}|47s295ms|&&\\\hline
+        \mintinline{C}{TOD}&\mintinline{C}{TOD#00:00}&\mintinline{C}{TOD#1193:02:}&32&\\
+        &&\mintinline{C}{47.295}&&\\\hline
+        \mintinline{C}{DATE}&\mintinline{C}{D#1970-01-01}&\mintinline{C}{D#2106-02-06}&32&\\\hline
+        \mintinline{C}{DT}&\mintinline{C}{DT#1970-0-0}&\mintinline{C}{DT#2106-02-06-}&32&\\
+        &\mintinline{C}{-00:00}&\mintinline{C}{06:28:15}&&\\\hline
+    \end{tabular}
+\end{table}
+
 \subsection{DUT - Data Unit Type}
 \textnormal{Über DUT können benutzerdefinierte Datentypen angelegt werden. Die relevanten sind \mintinline{ST}{STRUCT} und \mintinline{ST}{ENUM}. Durch diese Typen kann ein Programm bedeutend lesbarer gestaltet werden.}
 
@@ -267,7 +300,29 @@ CONTINUE;   // Direkter Sprung zu Loop Anfang
 \end{lstlisting}
 
 
+
 \chapter{TwinCat}
 \textnormal{TwinCat ist die Entwicklungsumgebung von Beckoff für deren SPS Systeme. TwinCat liefert diverse Funktionen vorgefertigt für den Benutzer. In diesem Kapitel werden die relevantesten aufegelistet.}
+
+\section{Bitshifting}
+\textnormal{Mit Bitshifting Operationen können sämtliche Bits innerhalb einer Variable nach links oder rechts geshiftet werden. Die Bits am Rand werden verworfen und neu entstandene Lücken mit 0 aufgefüllt.}
+
+\begin{lstlisting}
+res := SHL(bByte, 2);   // Shift Left
+res := SHR(bByte, 2);   // Shift Right
+\end{lstlisting}
+
+\textnormal{Mit Bitrotate Befehlen können herausgeschobene Bits rotiert werden (herausgeschobene Bits werden am anderen Ende wieder hineingeschoben).}
+
+\begin{lstlisting}
+res := ROL(bByte,2);    // Circular Shift Left
+res := ROL(bByte,3);    // Circular Shift Right
+\end{lstlisting}
+
+\textnormal{Die Shift-Operationen können mit allen gängigen Datentypen verwendet werden.}
+
+\section{Limit}
+
+
 
 \chapter{Beispiel Code}

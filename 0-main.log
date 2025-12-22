@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.21)  22 DEC 2025 11:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.21)  22 DEC 2025 12:38
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -968,43 +968,43 @@ File: utrsy.fd 2000/06/25v1.0transformation symbol font definitions
 
  (./ZF.tex
 Kapitel 1.
-<img/Bild_2025-09-23_094245630.png, id=172, 1236.62pt x 668.4975pt>
+<img/Bild_2025-09-23_094245630.png, id=188, 1236.62pt x 668.4975pt>
 File: img/Bild_2025-09-23_094245630.png Graphic file (type png)
 <use img/Bild_2025-09-23_094245630.png>
 Package pdftex.def Info: img/Bild_2025-09-23_094245630.png  used on input line 9.
 (pdftex.def)             Requested size: 208.24174pt x 112.57202pt.
-<img/Bild_2025-09-23_093009913.png, id=173, 542.025pt x 766.865pt>
+<img/Bild_2025-09-23_093009913.png, id=189, 542.025pt x 766.865pt>
 File: img/Bild_2025-09-23_093009913.png Graphic file (type png)
 <use img/Bild_2025-09-23_093009913.png>
 Package pdftex.def Info: img/Bild_2025-09-23_093009913.png  used on input line 16.
 (pdftex.def)             Requested size: 104.11888pt x 147.30896pt.
-<img/Bild_2025-09-23_093955196.png, id=174, 1139.25626pt x 625.33624pt>
+<img/Bild_2025-09-23_093955196.png, id=190, 1139.25626pt x 625.33624pt>
 File: img/Bild_2025-09-23_093955196.png Graphic file (type png)
 <use img/Bild_2025-09-23_093955196.png>
 Package pdftex.def Info: img/Bild_2025-09-23_093955196.png  used on input line 39.
 (pdftex.def)             Requested size: 156.1823pt x 85.72398pt.
-<img/Bild_2025-09-23_094648272.png, id=175, 1041.8925pt x 553.06625pt>
+<img/Bild_2025-09-23_094648272.png, id=191, 1041.8925pt x 553.06625pt>
 File: img/Bild_2025-09-23_094648272.png Graphic file (type png)
 <use img/Bild_2025-09-23_094648272.png>
 Package pdftex.def Info: img/Bild_2025-09-23_094648272.png  used on input line 46.
 (pdftex.def)             Requested size: 156.1823pt x 82.90572pt.
-<img/Bild_2025-09-23_094725052.png, id=176, 772.8875pt x 659.46375pt>
+<img/Bild_2025-09-23_094725052.png, id=192, 772.8875pt x 659.46375pt>
 File: img/Bild_2025-09-23_094725052.png Graphic file (type png)
 <use img/Bild_2025-09-23_094725052.png>
 Package pdftex.def Info: img/Bild_2025-09-23_094725052.png  used on input line 52.
 (pdftex.def)             Requested size: 156.1823pt x 133.25891pt.
 Kapitel 2.
-<img/Bild_2025-09-23_095018637.png, id=177, 708.6475pt x 582.175pt>
+<img/Bild_2025-09-23_095018637.png, id=193, 708.6475pt x 582.175pt>
 File: img/Bild_2025-09-23_095018637.png Graphic file (type png)
 <use img/Bild_2025-09-23_095018637.png>
 Package pdftex.def Info: img/Bild_2025-09-23_095018637.png  used on input line 59.
 (pdftex.def)             Requested size: 78.09114pt x 64.14604pt.
-<img/Bild_2025-09-23_095127951.png, id=178, 1219.55624pt x 496.85625pt>
+<img/Bild_2025-09-23_095127951.png, id=194, 1219.55624pt x 496.85625pt>
 File: img/Bild_2025-09-23_095127951.png Graphic file (type png)
 <use img/Bild_2025-09-23_095127951.png>
 Package pdftex.def Info: img/Bild_2025-09-23_095127951.png  used on input line 64.
 (pdftex.def)             Requested size: 260.3012pt x 106.0487pt.
-<img/Bild_2025-09-23_095610157.png, id=179, 799.98875pt x 166.6225pt>
+<img/Bild_2025-09-23_095610157.png, id=195, 799.98875pt x 166.6225pt>
 File: img/Bild_2025-09-23_095610157.png Graphic file (type png)
 <use img/Bild_2025-09-23_095610157.png>
 Package pdftex.def Info: img/Bild_2025-09-23_095610157.png  used on input line 71.
@@ -1027,16 +1027,149 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <9> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 146.
 \openout4 = `0-main.pyg'.
 
- (./_minted-0-main/default.pygstyle) (./_minted-0-main/A65DC64F0026CC99CE48D4E3F02A8B9E0D1FAE51B696B24217F8C9F6EAA2C605.pygtex)
+ (./_minted-0-main/default.pygstyle) (./_minted-0-main/3108A275C2AD15DFC90F9DF4F56E11F7210425520656977DBF2395C78C86CC86.pygtex
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 3.
+)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/1159184937F1A52D70A06A50D63B5947210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/45CE3B2543A563AAC0F955D52767E570210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/1B454CC4AD133B2A5395F5E969ABA718210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/4FB7F3F4F1B4CEAA707E1429A0E81524210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/221791F6E1F14CB5404A7546912A1FF3210425520656977DBF2395C78C86CC86.pygtex)
+Overfull \hbox (1.32797pt too wide) in paragraph at lines 3--185
+[]|[]| 
+ []
+
+\openout4 = `0-main.pyg'.
+
+(./_minted-0-main/BA8C1245BB3C3681D055312EB9F9686F210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/6F9124A39B5D90863778C3AB79721447210425520656977DBF2395C78C86CC86.pygtex)
+Overfull \hbox (1.32797pt too wide) in paragraph at lines 3--187
+[]|[]| 
+ []
+
+\openout4 = `0-main.pyg'.
+
+(./_minted-0-main/FEC2D0600BF363A510034E2619519212210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/45756CE4D5D5CF99E88685FCE6C723F4210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/2C334F15F632D47EA9432DD14E2DB865210425520656977DBF2395C78C86CC86.pygtex)
+Overfull \hbox (3.57625pt too wide) in paragraph at lines 190--190
+[]|$\OMS/cmsy/m/n/8 ^^@$\T1/cmr/m/n/8 2147483648| 
+ []
+
+\openout4 = `0-main.pyg'.
+
+(./_minted-0-main/A014B6F8AE01C660342A1766ED4E1B69210425520656977DBF2395C78C86CC86.pygtex)
+Overfull \hbox (1.32797pt too wide) in paragraph at lines 3--191
+[]|[]| 
+ []
+
+\openout4 = `0-main.pyg'.
+
+(./_minted-0-main/89A5BC96D967419EC0D07C6C704A6F1E210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/6882DB18303C594732CC6C701836C3E4210425520656977DBF2395C78C86CC86.pygtex)
+Overfull \hbox (1.32797pt too wide) in paragraph at lines 3--193
+[]|[]| 
+ []
+
+\openout4 = `0-main.pyg'.
+
+(./_minted-0-main/71F48B3561C9E187A7F356729C929A69210425520656977DBF2395C78C86CC86.pygtex)
+Overfull \hbox (5.57693pt too wide) in paragraph at lines 3--194
+[]|[]| 
+ []
+
+\openout4 = `0-main.pyg'.
+
+(./_minted-0-main/0DB79AD9BAAAFFDF59DB4AFBA3E7627D210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/6EF60C1DC88982712D8C6FE99774ACD5210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/9EA72268D6D96602C3CBCABE5BD88BF9210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/F0C5F1ACC0609CFFC742299CC6ABF468210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/884AA6090D8ECDE0E115BE428359BFBF210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/23FDAB3078034E2270B4DAB8C8520275210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/681E0D277E4AE4F4AB7EA6B802283A1E210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/F77372866466A315EB4B334FB0F9EE58210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/470347CD2AF9E77FCB4F25A4B26701CE210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/2860FE9CCF50734D73DE4527964CA761210425520656977DBF2395C78C86CC86.pygtex)
+Overfull \hbox (5.46297pt too wide) in paragraph at lines 3--199
+[]|[]| 
+ []
+
+\openout4 = `0-main.pyg'.
+
+(./_minted-0-main/A4EDFF1C37460C3A32CDC30E04F2661E210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/7F154CE96D8C8A478142FCA42D210FA7210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/5B28FF19AEE7CF6BA8923853898255B5210425520656977DBF2395C78C86CC86.pygtex)
+Overfull \hbox (1.214pt too wide) in paragraph at lines 3--200
+[]|[]| 
+ []
+
+\openout4 = `0-main.pyg'.
+
+(./_minted-0-main/3F9B413AB863817A7CCF114D63FBCA93210425520656977DBF2395C78C86CC86.pygtex)
+Overfull \hbox (5.42542pt too wide) in paragraph at lines 3--200
+[]|[]| 
+ []
+
+\openout4 = `0-main.pyg'.
+
+(./_minted-0-main/92A3B7B0A7C30013BA1F7EFD68DD2D0C210425520656977DBF2395C78C86CC86.pygtex)
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/1211A3C306E52CD7E54CDB1D416B3788210425520656977DBF2395C78C86CC86.pygtex) [3 <./img/Bild_2025-09-23_095018637.png> <./img/Bild_2025-09-23_095127951.png> <./img/Bild_2025-09-23_095610157.png>]
+\openout4 = `0-main.pyg'.
+
+ (./_minted-0-main/A65DC64F0026CC99CE48D4E3F02A8B9E0D1FAE51B696B24217F8C9F6EAA2C605.pygtex)
 \openout4 = `0-main.pyg'.
 
  (./_minted-0-main/38E2B6834C94C180F30B9D09E056BC430D1FAE51B696B24217F8C9F6EAA2C605.pygtex)
 \openout4 = `0-main.pyg'.
 
- (./_minted-0-main/B22239D2A5F74240820F0666BB2656CF0D1FAE51B696B24217F8C9F6EAA2C605.pygtex) [3 <./img/Bild_2025-09-23_095018637.png> <./img/Bild_2025-09-23_095127951.png> <./img/Bild_2025-09-23_095610157.png>]
+ (./_minted-0-main/B22239D2A5F74240820F0666BB2656CF0D1FAE51B696B24217F8C9F6EAA2C605.pygtex)
 Kapitel 7.
+[4]
 Kapitel 8.
-) [4] 
+) [5] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./0-main.aux (./ZF.aux))
  ***********
@@ -1044,23 +1177,23 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `0-main.out' has not changed.
-(rerunfilecheck)             Checksum: 9A751333707EB4BE4DFB91985B6E51C3;3789.
+(rerunfilecheck)             Checksum: 68D1DDEAA542A5D0B121F845725455FD;4129.
 runsystem(rm 0-main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 30457 strings out of 476056
- 562024 string characters out of 5791603
- 2097975 words of memory out of 5000000
- 51812 multiletter control sequences out of 15000+600000
- 576723 words of font info for 78 fonts, out of 8000000 for 9000
+ 30708 strings out of 476056
+ 581331 string characters out of 5791603
+ 2132975 words of memory out of 5000000
+ 51957 multiletter control sequences out of 15000+600000
+ 577489 words of font info for 79 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 88i,11n,120p,1053b,1679s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecit0900.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0500.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0800.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0800.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0800.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx2488.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1200.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1440.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on 0-main.pdf (4 pages, 1288780 bytes).
+ 88i,17n,120p,1053b,1696s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecit0900.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0500.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0800.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0800.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0800.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx2488.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1200.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1440.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on 0-main.pdf (5 pages, 1312067 bytes).
 PDF statistics:
- 750 PDF objects out of 1000 (max. 8388607)
- 337 compressed objects within 4 object streams
- 115 named destinations out of 1000 (max. 500000)
- 301 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 823 PDF objects out of 1000 (max. 8388607)
+ 368 compressed objects within 4 object streams
+ 127 named destinations out of 1000 (max. 500000)
+ 325 words of extra memory for PDF output out of 10000 (max. 10000000)
 

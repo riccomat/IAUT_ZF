@@ -15,10 +15,11 @@
 \contentsline {chapter}{\numberline {6}ST-Language}{3}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Grundaufbau}{3}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Variablentypen}{3}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}DUT - Data Unit Type}{3}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Programm}{4}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Funktionsblock}{4}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Funktion}{4}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.1}System Datentypen}{3}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}DUT - Data Unit Type}{4}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Programm}{4}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Funktionsblock}{4}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}Funktion}{4}{subsection.6.2.5}%
 \contentsline {section}{\numberline {6.3}Variablen-Scope}{4}{section.6.3}%
 \contentsline {subsection}{\numberline {6.3.1}Globale Variablen}{4}{subsection.6.3.1}%
 \contentsline {section}{\numberline {6.4}Conditional Statements}{4}{section.6.4}%
@@ -30,4 +31,6 @@
 \contentsline {subsection}{\numberline {6.5.3}FOR}{4}{subsection.6.5.3}%
 \contentsline {subsection}{\numberline {6.5.4}Schleifen Modifikatoren}{4}{subsection.6.5.4}%
 \contentsline {chapter}{\numberline {7}TwinCat}{4}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Beispiel Code}{4}{chapter.8}%
+\contentsline {section}{\numberline {7.1}Bitshifting}{5}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Limit}{5}{section.7.2}%
+\contentsline {chapter}{\numberline {8}Beispiel Code}{5}{chapter.8}%
