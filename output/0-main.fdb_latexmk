@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1766420245.96524 "/home/eric/git/HS25/IAUT_ZF/0-main.tex" "output/0-main.pdf" "0-main" 1766420250.04789 0
+["pdflatex"] 1766424107.341 "/home/eric/git/HS25/IAUT_ZF/0-main.tex" "output/0-main.pdf" "0-main" 1766424111.61395 0
   "/etc/texmf/web2c/texmf.cnf" 1766315479.77022 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0800.600pk" 1766315921.87442 19852 351ce0ff09b86510587bbe622f5b59ed ""
   "/home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecit0900.600pk" 1766315599.46444 22964 1977bf1e2e4f77f49708df1e6139d6f7 ""
@@ -237,7 +237,7 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1766315484.80591 165012 f177baa1c39a3ebd62c3096a43521a0d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1766315796 7307019 91f702db9364f5e9afea62062f77fda1 ""
   "0-main.tex" 1766409320.86565 509 2526ad0acc9a950053f2c4c62f775fcd ""
-  "ZF.tex" 1766420245.67993 20722 046a3eb38f8da3482463221fd0eb8aae ""
+  "ZF.tex" 1766424102.76126 22571 ffb837fc93f9819adcd33b317e66277f ""
   "_minted-0-main/0DB79AD9BAAAFFDF59DB4AFBA3E7627D210425520656977DBF2395C78C86CC86.pygtex" 1766401842.72534 67 9d3613f1814e32c948b27d5048c8fdac ""
   "_minted-0-main/1159184937F1A52D70A06A50D63B5947210425520656977DBF2395C78C86CC86.pygtex" 1766402692.38802 67 cba09431b6e5cadf65b5d308e7438f53 ""
   "_minted-0-main/1211A3C306E52CD7E54CDB1D416B3788210425520656977DBF2395C78C86CC86.pygtex" 1766403461.59864 122 165c4d85bde5fb908ef2bd1bb2c3944a ""
@@ -286,11 +286,12 @@
   "img/Bildschirmfoto vom 2025-12-22 15-14-37.png" 1766412893.42413 58839 2bcd1891f9fe2fea86181037bf1a633c ""
   "img/Bildschirmfoto vom 2025-12-22 17-10-47.png" 1766419862.1745 52035 d3dd160af115b707a4ae5311b637f9a8 ""
   "img/Bildschirmfoto vom 2025-12-22 17-15-16.png" 1766420142.41164 60335 c88674a354e979625ff41f460a3064c1 ""
-  "output/0-main.aux" 1766420249.85093 3031 ed7fc071383335ef46d65c856479e557 "pdflatex"
-  "output/0-main.out" 1766420249.85293 6660 55802fccd96661ce8c7383b912f13841 "pdflatex"
-  "output/0-main.pyg" 1766420249.00746 5 38e2b6834c94c180f30b9d09e056bc43 "pdflatex"
-  "output/0-main.toc" 1766420249.85893 4026 0326d1458b3ff0849b647656f3e64049 "pdflatex"
-  "output/ZF.aux" 1766420249.84493 7636 83db907c8f63fe9bb7f0f5e5fda8c4da "pdflatex"
+  "img/Bildschirmfoto vom 2025-12-22 17-57-55.png" 1766422689.78556 51581 c1b77d1328f99d01bbb8e68ad0d571f2 ""
+  "output/0-main.aux" 1766424111.40192 3031 dfee074a10c1664a99e3ead79ea69b9d "pdflatex"
+  "output/0-main.out" 1766424111.40492 6881 061f9754b8615a84fb0ab5fd67c81246 "pdflatex"
+  "output/0-main.pyg" 1766424110.39984 5 38e2b6834c94c180f30b9d09e056bc43 "pdflatex"
+  "output/0-main.toc" 1766424111.40992 4165 ab0473b7f09b6fcdd003b51cbfdfc552 "pdflatex"
+  "output/ZF.aux" 1766424111.39592 7858 b7e9d35686757411571a5a7c663ae121 "pdflatex"
   "plt/PT1-Freq.pdf" 1766417094.19396 12655 4e7444f7d5f40ef202ca0ab663db07cc ""
   "plt/PT2-Freq.pdf" 1766417783.0664 16370 2213f999ae9015f5ff86598637abede7 ""
   (generated)
