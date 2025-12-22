@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.21)  21 DEC 2025 16:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.21)  22 DEC 2025 11:03
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -968,43 +968,43 @@ File: utrsy.fd 2000/06/25v1.0transformation symbol font definitions
 
  (./ZF.tex
 Kapitel 1.
-<img/Bild_2025-09-23_094245630.png, id=147, 1236.62pt x 668.4975pt>
+<img/Bild_2025-09-23_094245630.png, id=172, 1236.62pt x 668.4975pt>
 File: img/Bild_2025-09-23_094245630.png Graphic file (type png)
 <use img/Bild_2025-09-23_094245630.png>
 Package pdftex.def Info: img/Bild_2025-09-23_094245630.png  used on input line 9.
 (pdftex.def)             Requested size: 208.24174pt x 112.57202pt.
-<img/Bild_2025-09-23_093009913.png, id=148, 542.025pt x 766.865pt>
+<img/Bild_2025-09-23_093009913.png, id=173, 542.025pt x 766.865pt>
 File: img/Bild_2025-09-23_093009913.png Graphic file (type png)
 <use img/Bild_2025-09-23_093009913.png>
 Package pdftex.def Info: img/Bild_2025-09-23_093009913.png  used on input line 16.
 (pdftex.def)             Requested size: 104.11888pt x 147.30896pt.
-<img/Bild_2025-09-23_093955196.png, id=149, 1139.25626pt x 625.33624pt>
+<img/Bild_2025-09-23_093955196.png, id=174, 1139.25626pt x 625.33624pt>
 File: img/Bild_2025-09-23_093955196.png Graphic file (type png)
 <use img/Bild_2025-09-23_093955196.png>
 Package pdftex.def Info: img/Bild_2025-09-23_093955196.png  used on input line 39.
 (pdftex.def)             Requested size: 156.1823pt x 85.72398pt.
-<img/Bild_2025-09-23_094648272.png, id=150, 1041.8925pt x 553.06625pt>
+<img/Bild_2025-09-23_094648272.png, id=175, 1041.8925pt x 553.06625pt>
 File: img/Bild_2025-09-23_094648272.png Graphic file (type png)
 <use img/Bild_2025-09-23_094648272.png>
 Package pdftex.def Info: img/Bild_2025-09-23_094648272.png  used on input line 46.
 (pdftex.def)             Requested size: 156.1823pt x 82.90572pt.
-<img/Bild_2025-09-23_094725052.png, id=151, 772.8875pt x 659.46375pt>
+<img/Bild_2025-09-23_094725052.png, id=176, 772.8875pt x 659.46375pt>
 File: img/Bild_2025-09-23_094725052.png Graphic file (type png)
 <use img/Bild_2025-09-23_094725052.png>
 Package pdftex.def Info: img/Bild_2025-09-23_094725052.png  used on input line 52.
 (pdftex.def)             Requested size: 156.1823pt x 133.25891pt.
 Kapitel 2.
-<img/Bild_2025-09-23_095018637.png, id=152, 708.6475pt x 582.175pt>
+<img/Bild_2025-09-23_095018637.png, id=177, 708.6475pt x 582.175pt>
 File: img/Bild_2025-09-23_095018637.png Graphic file (type png)
 <use img/Bild_2025-09-23_095018637.png>
 Package pdftex.def Info: img/Bild_2025-09-23_095018637.png  used on input line 59.
 (pdftex.def)             Requested size: 78.09114pt x 64.14604pt.
-<img/Bild_2025-09-23_095127951.png, id=153, 1219.55624pt x 496.85625pt>
+<img/Bild_2025-09-23_095127951.png, id=178, 1219.55624pt x 496.85625pt>
 File: img/Bild_2025-09-23_095127951.png Graphic file (type png)
 <use img/Bild_2025-09-23_095127951.png>
 Package pdftex.def Info: img/Bild_2025-09-23_095127951.png  used on input line 64.
 (pdftex.def)             Requested size: 260.3012pt x 106.0487pt.
-<img/Bild_2025-09-23_095610157.png, id=154, 799.98875pt x 166.6225pt>
+<img/Bild_2025-09-23_095610157.png, id=179, 799.98875pt x 166.6225pt>
 File: img/Bild_2025-09-23_095610157.png Graphic file (type png)
 <use img/Bild_2025-09-23_095610157.png>
 Package pdftex.def Info: img/Bild_2025-09-23_095610157.png  used on input line 71.
@@ -1044,23 +1044,23 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `0-main.out' has not changed.
-(rerunfilecheck)             Checksum: 3B0A83807217C153C4CD9ED818CB29BD;3253.
+(rerunfilecheck)             Checksum: 9A751333707EB4BE4DFB91985B6E51C3;3789.
 runsystem(rm 0-main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 30419 strings out of 476056
- 561447 string characters out of 5791603
- 2030975 words of memory out of 5000000
- 51798 multiletter control sequences out of 15000+600000
+ 30457 strings out of 476056
+ 562024 string characters out of 5791603
+ 2097975 words of memory out of 5000000
+ 51812 multiletter control sequences out of 15000+600000
  576723 words of font info for 78 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  88i,11n,120p,1053b,1679s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecit0900.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0500.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0800.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0800.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0800.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx2488.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1200.600pk> </home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1440.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on 0-main.pdf (4 pages, 1281339 bytes).
+Output written on 0-main.pdf (4 pages, 1288780 bytes).
 PDF statistics:
- 683 PDF objects out of 1000 (max. 8388607)
- 288 compressed objects within 3 object streams
- 91 named destinations out of 1000 (max. 500000)
- 261 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 750 PDF objects out of 1000 (max. 8388607)
+ 337 compressed objects within 4 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 301 words of extra memory for PDF output out of 10000 (max. 10000000)
 

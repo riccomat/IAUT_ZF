@@ -223,6 +223,50 @@ ELSE
 END_CASE;
 \end{lstlisting}
 
+\section{Schleifen}
+\textnormal{Wie in C gibt es in TwinCat Schleifen. Dabei ist es von zentraler Bedeutung, dass diese Schleife nicht Endlos ist und eine Abbruchbedingung enthält. Ansonsten kann es vorkommen, dass auf die SPS nicht mehr zugegriffen werden kann. Die verschiedenen Schleifen werden hier aufgeführt.}
+
+\subsection{WHILE}
+\begin{tcolorbox}[colback=VeryLightOrange,colframe=DarkOrange,title=WHILE-Schleife]
+\textnormal{Sofern die Bedingung beim ersten Erreichen nicht zutrifft, wird der Inhalt der Schleife nicht ausgeführt.}
+\end{tcolorbox}
+
+\begin{lstlisting}[]
+WHILE iCounter <> 0 DO
+    iVar1 := iVar2;
+    iCounter := iCounter - 1;
+END_WHILE;
+\end{lstlisting}
+
+\subsection{REPEAT}
+\begin{tcolorbox}[colback=VeryLightOrange,colframe=DarkOrange,title=REPEAT-Schleife]
+\textnormal{Diese Schleife wird mindestens einmal durchgeführt.}
+\end{tcolorbox}
+
+\begin{lstlisting}[]
+REPEAT
+    iVar1 := iVar2;
+    iCounter := iCounter - 1;
+UNTIL
+    iCounter = 0;
+END_REPEAT;
+\end{lstlisting}
+
+\subsection{FOR}
+\begin{lstlisting}
+FOR iCounter = 1 TO 5 BY 1 DO
+    iVar1 := iVar2;
+END_FOR;
+\end{lstlisting}
+
+\subsection{Schleifen Modifikatoren}
+\textnormal{Mit diesen Modifikatoren kann wie in C beeinflusst werden, wie das Verhalten in der Schleife ist.}
+\begin{lstlisting}
+EXIT;       // Ausbruch aus aktuellem Loop 
+CONTINUE;   // Direkter Sprung zu Loop Anfang
+\end{lstlisting}
+
+
 \chapter{TwinCat}
 \textnormal{TwinCat ist die Entwicklungsumgebung von Beckoff für deren SPS Systeme. TwinCat liefert diverse Funktionen vorgefertigt für den Benutzer. In diesem Kapitel werden die relevantesten aufegelistet.}
 

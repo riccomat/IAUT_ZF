@@ -24,5 +24,10 @@
 \contentsline {section}{\numberline {6.4}Conditional Statements}{4}{section.6.4}%
 \contentsline {subsection}{\numberline {6.4.1}If/Else}{4}{subsection.6.4.1}%
 \contentsline {subsection}{\numberline {6.4.2}Switch-Case}{4}{subsection.6.4.2}%
+\contentsline {section}{\numberline {6.5}Schleifen}{4}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}WHILE}{4}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}REPEAT}{4}{subsection.6.5.2}%
+\contentsline {subsection}{\numberline {6.5.3}FOR}{4}{subsection.6.5.3}%
+\contentsline {subsection}{\numberline {6.5.4}Schleifen Modifikatoren}{4}{subsection.6.5.4}%
 \contentsline {chapter}{\numberline {7}TwinCat}{4}{chapter.7}%
 \contentsline {chapter}{\numberline {8}Beispiel Code}{4}{chapter.8}%
