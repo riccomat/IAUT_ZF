@@ -1,4 +1,5 @@
 \chapter{Automatisierung}
+
 \begin{tcolorbox}[colback=VeryLightOrange,colframe=DarkOrange,title=Definition Automatisierung]
 \textnormal{Unter Automatisierung (DIN19222) versteht man das gezielte Ausrüsten einer Einrichtung, so dass sie ganz oder teilweise ohne Mitwirkung des Menschen geschieht und arbeiten kann.}
 \end{tcolorbox}
@@ -514,6 +515,12 @@ bOut := fbTP.Q;
 \end{equation*}
 
 \section{Diskreter PID-Regler}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width =  \columnwidth]{img/Bildschirmfoto vom 2025-12-22 17-10-47.png}
+\end{figure}
+
 \textnormal{Der PID-Regler muss auch diskretisiert werden. Der zeitkontinuierliche PID-Regler hat die Form:}
 \begin{equation*}
     C(s) = \frac{U(s)}{E(s)} = k_P \left( 1 + \frac{1}{T_i s} + \frac{T_ds}{\frac{T_d}{N}s+1} \right)
@@ -574,11 +581,17 @@ usat := LIMIT(umin, u, umax);
 \end{lstlisting}
 
 \subsection{Antireset-Windup (ARW)}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width =  \columnwidth]{img/Bildschirmfoto vom 2025-12-22 17-15-16.png}
+\end{figure}
+
 \textnormal{Wird ein ARW implementiert, integriert sich der I-Anteil nicht mehr über das Limit heraus. Der Regler ist damit viel reaktiver. Der I-Anteil mit ARW ist somit:}
 \begin{equation*}
-    u_I[k] = u_I[k-1]+\frac{k_PT_s}{T_i}e[k] + \frac{T_s}{T_r}(u[k]-u_{nosat}[k])
+    u_I[k] = u_I[k-1]+\frac{k_PT_s}{T_i}e[k] + \frac{T_s}{T_r}(u_{sat}[k]-u[k])
 \end{equation*}
-\textnormal{Wobei $u_{nosat}$ der gesamte PID-Wert ohne Sättigung ist.}
+\textnormal{Wobei $u[k]$ die gesamte PID-Stellgrösse ohne Sättigung ist.}
 
 \chapter{FSM - Finite State Machine}
 

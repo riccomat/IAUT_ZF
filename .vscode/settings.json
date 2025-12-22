@@ -8,6 +8,7 @@
         "-shell-escape",
         "-interaction=nonstopmode",
         "-synctex=1",
+        "-outdir=output",
         "%DOC%"
       ]
     }
