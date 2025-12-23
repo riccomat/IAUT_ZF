@@ -62,4 +62,7 @@
 \contentsline {subsection}{\numberline {7.4.1}Parameter Struct}{9}{subsection.7.4.1}%
 \contentsline {subsection}{\numberline {7.4.2}Funktionsblock}{9}{subsection.7.4.2}%
 \contentsline {chapter}{\numberline {8}Matlab-Befehle}{10}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Simulink}{10}{section.8.1}%
 \contentsline {chapter}{\numberline {9}Hilfsblätter}{10}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Laplace Transformation}{10}{section.9.1}%
+\contentsline {section}{\numberline {9.2}$z$-Transformation}{11}{section.9.2}%

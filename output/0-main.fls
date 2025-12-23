@@ -738,6 +738,39 @@ INPUT ./img/Bildschirmfoto vom 2025-12-23 09-55-58.png
 INPUT ./img/Bildschirmfoto vom 2025-12-23 09-55-58.png
 INPUT ./img/Bildschirmfoto vom 2025-12-23 09-55-58.png
 INPUT ./img/Bildschirmfoto vom 2025-12-23 09-55-58.png
+INPUT ./img/Bildschirmfoto vom 2025-12-23 10-39-11.png
+INPUT ./img/Bildschirmfoto vom 2025-12-23 10-39-11.png
+INPUT ./img/Bildschirmfoto vom 2025-12-23 10-39-11.png
+INPUT ./img/Bildschirmfoto vom 2025-12-23 10-39-11.png
+INPUT ./img/Bildschirmfoto vom 2025-12-23 10-39-11.png
+INPUT ./hilfsblatt/Laplace1.pdf
+INPUT ./hilfsblatt/Laplace1.pdf
+INPUT ./hilfsblatt/Laplace1.pdf
+INPUT ./hilfsblatt/Laplace1.pdf
+INPUT ./hilfsblatt/Laplace1.pdf
+INPUT ./hilfsblatt/Laplace2.pdf
+INPUT ./hilfsblatt/Laplace2.pdf
+INPUT ./hilfsblatt/Laplace2.pdf
+INPUT ./hilfsblatt/Laplace2.pdf
+INPUT ./hilfsblatt/Laplace2.pdf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/trsym/trsy12.tfm
+INPUT ./hilfsblatt/zTrans1.pdf
+INPUT ./hilfsblatt/zTrans1.pdf
+INPUT ./hilfsblatt/zTrans1.pdf
+INPUT ./hilfsblatt/zTrans1.pdf
+INPUT ./hilfsblatt/zTrans1.pdf
+INPUT ./hilfsblatt/zTrans2.pdf
+INPUT ./hilfsblatt/zTrans2.pdf
+INPUT ./hilfsblatt/zTrans2.pdf
+INPUT ./hilfsblatt/zTrans2.pdf
+INPUT ./hilfsblatt/zTrans2.pdf
 INPUT output/0-main.aux
 INPUT output/ZF.aux
 INPUT output/ZF.aux
@@ -759,6 +792,7 @@ INPUT /home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600
 INPUT /home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1200.600pk
 INPUT /home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1440.600pk
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
@@ -766,3 +800,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
