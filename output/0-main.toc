@@ -50,5 +50,16 @@
 \contentsline {subsection}{\numberline {5.5.1}Antireset-Windup (ARW)}{7}{subsection.5.5.1}%
 \contentsline {chapter}{\numberline {6}FSM - Finite State Machine}{8}{chapter.6}%
 \contentsline {chapter}{\numberline {7}Beispiel Code}{8}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Matlab-Befehle}{8}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Hilfsblätter}{8}{chapter.9}%
+\contentsline {section}{\numberline {7.1}Flankendetektor}{8}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Enumeration}{8}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Funktionsblock}{8}{subsection.7.1.2}%
+\contentsline {section}{\numberline {7.2}PID-Regler}{9}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Parameter Struct}{9}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}System Modus Enum}{9}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Funktionsblock}{9}{subsection.7.2.3}%
+\contentsline {section}{\numberline {7.3}PT1 Prozess}{9}{section.7.3}%
+\contentsline {section}{\numberline {7.4}PT2 Prozess}{9}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Parameter Struct}{9}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Funktionsblock}{9}{subsection.7.4.2}%
+\contentsline {chapter}{\numberline {8}Matlab-Befehle}{10}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Hilfsblätter}{10}{chapter.9}%

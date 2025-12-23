@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1766479091.5661 "/home/eric/git/HS25/IAUT_ZF/0-main.tex" "output/0-main.pdf" "0-main" 1766479093.59704 0
+["pdflatex"] 1766481114.96801 "/home/eric/git/HS25/IAUT_ZF/0-main.tex" "output/0-main.pdf" "0-main" 1766481116.78463 0
   "/etc/texmf/web2c/texmf.cnf" 1766315479.77022 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0800.600pk" 1766315921.87442 19852 351ce0ff09b86510587bbe622f5b59ed ""
   "/home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecit0900.600pk" 1766315599.46444 22964 1977bf1e2e4f77f49708df1e6139d6f7 ""
@@ -237,7 +237,7 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1766315484.80591 165012 f177baa1c39a3ebd62c3096a43521a0d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1766315796 7307019 91f702db9364f5e9afea62062f77fda1 ""
   "0-main.tex" 1766409320.86565 509 2526ad0acc9a950053f2c4c62f775fcd ""
-  "ZF.tex" 1766478992.48192 22884 addaa7503238c4892309ba4f99ae1c84 ""
+  "ZF.tex" 1766481114.84313 27319 b0f2c88496ec774d329af5b6efd580b4 ""
   "config_ZF_hs24.tex" 1766479088.24927 5656 4992c1bc4275675d7496c376fdec4091 ""
   "img/Bild_2025-09-23_093009913.png" 1766311190 96439 5f1e21d1cf98c3f0fe492510c22c8518 ""
   "img/Bild_2025-09-23_093955196.png" 1766311190 477485 c4f6b8b988bb31af26fd72b7ad1c227f ""
@@ -253,10 +253,11 @@
   "img/Bildschirmfoto vom 2025-12-22 17-10-47.png" 1766419862.1745 52035 d3dd160af115b707a4ae5311b637f9a8 ""
   "img/Bildschirmfoto vom 2025-12-22 17-15-16.png" 1766420142.41164 60335 c88674a354e979625ff41f460a3064c1 ""
   "img/Bildschirmfoto vom 2025-12-22 17-57-55.png" 1766422689.78556 51581 c1b77d1328f99d01bbb8e68ad0d571f2 ""
-  "output/0-main.aux" 1766479093.48061 3181 67abef48fd7b16fb1ae6c714411edfa4 "pdflatex"
-  "output/0-main.out" 1766479093.48161 6881 061f9754b8615a84fb0ab5fd67c81246 "pdflatex"
-  "output/0-main.toc" 1766479093.48461 4165 b6baad7c2ac1a987144b1c0f736b41bd "pdflatex"
-  "output/ZF.aux" 1766479093.47761 7858 40c44840e02948e1ca006103096bf828 "pdflatex"
+  "img/Bildschirmfoto vom 2025-12-23 09-55-58.png" 1766480174.19633 22248 16ec5f3ba2706265fb7ea8de96e9788e ""
+  "output/0-main.aux" 1766481116.67812 3186 4531b70e8b511ba353232598fc2b01f4 "pdflatex"
+  "output/0-main.out" 1766481116.67944 8298 14dba50665ccc9e206ca996bb356ad96 "pdflatex"
+  "output/0-main.toc" 1766481116.68112 5046 346564b6981818ed03eff48ec2847283 "pdflatex"
+  "output/ZF.aux" 1766481116.67667 9192 9939e35731d2acab2f2ce7e2644e1d22 "pdflatex"
   "output/_minted-0-main/0DB79AD9BAAAFFDF59DB4AFBA3E7627DF9751EEEE7198A81CBBB147E17CB6EEE.pygtex" 1766479090.23254 67 9d3613f1814e32c948b27d5048c8fdac ""
   "output/_minted-0-main/1159184937F1A52D70A06A50D63B5947F9751EEEE7198A81CBBB147E17CB6EEE.pygtex" 1766479089.68704 67 cba09431b6e5cadf65b5d308e7438f53 ""
   "output/_minted-0-main/1211A3C306E52CD7E54CDB1D416B3788F9751EEEE7198A81CBBB147E17CB6EEE.pygtex" 1766479090.86597 122 165c4d85bde5fb908ef2bd1bb2c3944a ""

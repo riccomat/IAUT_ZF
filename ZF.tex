@@ -658,6 +658,229 @@ END_CASE
 \newcolumn
 
 \chapter{Beispiel Code}
+\textnormal{Ein paar Beispiel Codes können hier entnommen werden.}
+
+\section{Flankendetektor}
+\textnormal{Damit ein Button nur einmal als gedrückt wahrgenommen wird, muss eine Flankendetektion implementiert werden. So kann auch darauf reagiert werden, wenn die Taste losgelassen wird. Für die Lesbarkeit, wird ein Enumerationstyp definiert.}
+
+\subsection{Enumeration}
+\begin{lstlisting}
+// fuer die Button Flanken
+TYPE sButtonState :
+STRUCT
+	bState : BOOL;
+	bRisingEdge : BOOL;
+	bFallingEdge : BOOL;
+END_STRUCT
+END_TYPE
+\end{lstlisting}
+
+\subsection{Funktionsblock}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width =  0.6\columnwidth]{img/Bildschirmfoto vom 2025-12-23 09-55-58.png}
+\end{figure}
+
+\begin{lstlisting}
+FUNCTION_BLOCK EdgeDetector
+VAR_INPUT
+	bSignal : BOOL;
+	iInterval : INT;
+END_VAR
+VAR_OUTPUT
+	bFallingEdge : BOOL;
+	bRisingEdge : BOOL;
+END_VAR
+VAR
+	bPrevSignal : BOOL;
+	state : eStateEdgeDetect;
+	interval : INT;
+END_VAR
+
+IF bPrevSignal AND NOT bSignal THEN
+	// falling edge detected
+	bFallingEdge := 1;
+	bRisingEdge := 0;
+	state := eStateEdgeDetect.one_press;
+ELSIF NOT bPrevSignal AND bSignal THEN
+	// rising edge detected
+	bFallingEdge := 0;
+	bRisingEdge := 1;
+	state := eStateEdgeDetect.one_press;
+ELSE
+	// edge is nor falling or rising
+	bFallingEdge := 0;
+	bRisingEdge := 0;
+END_IF
+
+// store signal for next cycle
+bPrevSignal := bSignal;
+\end{lstlisting}
+\newcolumn
+
+\section{PID-Regler}
+\subsection{Parameter Struct}
+\begin{lstlisting}
+TYPE sPID_Params :
+STRUCT
+	Kp	    : REAL; // Proportional Faktor
+	Ti	    : REAL; // Nachstellzeit
+	Td	    : REAL; // Vorhaltzeit
+	Tr	    : REAL; // ARW Zeitkonstante
+	N	      : UINT; // Filterkonstante
+	ARW     : BOOL; // ARW Enable/Disable
+	umin    : REAL; // usat minimal
+	umax    : REAL; // usat maximal
+END_STRUCT
+END_TYPE
+\end{lstlisting}
+
+\subsection{System Modus Enum}
+\begin{lstlisting}
+TYPE eSystem_Modus :
+(
+	System_Init := 0,
+	System_Run := 1
+);
+END_TYPE
+\end{lstlisting}
+
+\subsection{Funktionsblock}
+\begin{lstlisting}
+FUNCTION_BLOCK fbPID
+VAR_INPUT
+	ref			  : REAL;
+	y			    : REAL;
+	Mode		  : eSystem_Modus;
+	T			    : REAL;
+	sPID_Par 	: sPID_Params;
+END_VAR
+VAR_IN_OUT
+	
+END_VAR
+VAR_OUTPUT
+	u    : REAL;
+	usat : REAL;
+END_VAR
+VAR
+	rParamI  : REAL;
+	rParamD1 : REAL;
+	rParamD2 : REAL;
+	rE       : REAL;
+	rEm      : REAL;
+	rUp      : REAL;
+	rUi      : REAL;
+	rUim     : REAL;
+	rUd      : REAL; 
+	rUdm     : REAL;
+	u_arw    : REAL;
+END_VAR
+
+rE := ref - y;		// momentary error
+CASE Mode OF
+	eSystem_Modus.System_Init:
+		// Parameter for I-Part
+		rParamI := sPID_Par.Kp*T / sPID_Par.Ti;
+		// Parameter for D-Part
+		rParamD1 := ( sPID_Par.N*sPID_Par.Kp*sPID_Par.Td ) / (sPID_Par.Td + sPID_Par.N*T);
+		rParamD2 := ( sPID_Par.Td ) / (sPID_Par.Td + sPID_Par.N*T);
+		u := 0;
+	
+	eSystem_Modus.System_Run:
+		// P - Part
+		rUp := sPID_Par.Kp * rE;
+		// I - Part
+		rUi := rUim + rParamI * rE;
+		// D - Part
+		rUd := rParamD1 * (rE - rEm) + rParamD2 * rUdm;
+		u := rUp + rUi + rUd;
+		// saturating u if out of bounds
+		usat := LIMIT(u, sPID_Par.umin, sPID_Par.umax);
+		IF sPID_Par.ARW THEN
+    		rUi := rUi + (1.0 / sPID_Par.Tr) * (usat - u);
+		END_IF
+		rUim := rUi;
+        rUdm := rUd;
+        rEm := rE;
+END_CASE
+\end{lstlisting}
+
+\section{PT1 Prozess}
+\begin{lstlisting}
+FUNCTION_BLOCK PT1
+VAR_INPUT
+	signal    : REAL;
+	fg        : REAL;
+END_VAR
+VAR_OUTPUT
+	out       : REAL;
+END_VAR
+VAR
+	T         : REAL;
+	tau       : REAL;
+	prev_out  : REAL;
+END_VAR
+
+tau := 1/(2*pi*fg);
+T:= 0.01;
+
+out := (T/(T+tau))*signal + (tau/(T+tau))*prev_out;
+
+prev_out := out;
+\end{lstlisting}
+
+
+\section{PT2 Prozess}
+\subsection{Parameter Struct}
+\begin{lstlisting}
+TYPE dPT1T2_Params :
+STRUCT
+	K  : REAL;
+	T1 : REAL;
+	T2 : REAL;
+END_STRUCT
+END_TYPE
+\end{lstlisting}
+
+\subsection{Funktionsblock}
+\begin{lstlisting}
+FUNCTION_BLOCK PT1T2_Prozess
+VAR_INPUT
+	u     : REAL;
+	Modus : eSystem_Modus;
+	Param : dPT1T2_Params;
+	T     : REAL;
+END_VAR
+VAR_OUTPUT
+	out : REAL;
+END_VAR
+VAR
+	b0    : REAL;
+	alph1 : REAL;
+	alph2 : REAL;
+	a1    : REAL;
+	a2    : REAL;
+	outm  : REAL;
+	outmm : REAL;
+END_VAR
+
+CASE Modus OF
+	eSystem_Modus.System_Init:
+		// alphas
+		alph1 := T + Param.T1;
+		alph2 := T + Param.T2;
+		// funct. parameters
+		b0 := (Param.K * T * T) / (alph1*alph2);
+		a1 := -( (Param.T1/alph1) + (Param.T2/alph2) );
+		a2 := (Param.T1*Param.T2)/(alph1*alph2);
+		
+	eSystem_Modus.System_Run:
+		out := -a1*outm - a2*outmm + b0 * u;
+		outmm := outm;
+		outm := out;
+END_CASE
+\end{lstlisting}
 
 \chapter{Matlab-Befehle}
 \textnormal{Für die Auslegung und modellierung wurde in IAUT Matlab verwendet. Dabei wurden Tools wie der 'PID-Tuner' oder 'Siso-Tool' für die Auslegung der Regler eingesetzt. Grundsätzlich folgt der Reglerentwurf diesem Schema:}
