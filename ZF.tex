@@ -380,6 +380,10 @@ CONTINUE    // Direkter Sprung zu Loop Anfang
 \chapter{TwinCat}
 \textnormal{TwinCat ist die Entwicklungsumgebung von Beckoff für deren SPS Systeme. TwinCat liefert diverse Funktionen vorgefertigt für den Benutzer. In diesem Kapitel werden die relevantesten aufegelistet.}
 
+\begin{tcolorbox}[colback=VeryLightOrange,colframe=DarkOrange,title=Semicolons]
+\textnormal{TwinCat ist sehr tolerant was Semicolons nach \mintinline{C}{END_*} Anweisungen betrifft. Gemäss Standard wird jede Anweisung mit \mintinline{C}|;| abgeschlossen. TwinCat toleriert das nicht Setzen dieser Semicolons.}
+\end{tcolorbox}
+
 \section{Bitshifting}
 \textnormal{Mit Bitshifting Operationen können sämtliche Bits innerhalb einer Variable nach links oder rechts geshiftet werden. Die Bits am Rand werden verworfen und neu entstandene Lücken mit 0 aufgefüllt.}
 
