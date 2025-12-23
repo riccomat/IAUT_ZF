@@ -41,14 +41,14 @@
 \contentsline {subsection}{\numberline {5.1.2}Vorwärtsrechteck-Regel}{6}{subsection.5.1.2}%
 \contentsline {subsection}{\numberline {5.1.3}Trapezoidal-Regel (Tustin Approximation)}{6}{subsection.5.1.3}%
 \contentsline {section}{\numberline {5.2}PT1-Prozess}{6}{section.5.2}%
-\contentsline {section}{\numberline {5.3}PT2-Prozess}{6}{section.5.3}%
+\contentsline {section}{\numberline {5.3}PT2-Prozess}{7}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Diskreter PID-Regler}{7}{section.5.4}%
 \contentsline {subsection}{\numberline {5.4.1}P-Anteil}{7}{subsection.5.4.1}%
 \contentsline {subsection}{\numberline {5.4.2}I-Anteil}{7}{subsection.5.4.2}%
 \contentsline {subsection}{\numberline {5.4.3}D-Anteil}{7}{subsection.5.4.3}%
 \contentsline {section}{\numberline {5.5}Stellgrössensättigung}{7}{section.5.5}%
 \contentsline {subsection}{\numberline {5.5.1}Antireset-Windup (ARW)}{7}{subsection.5.5.1}%
-\contentsline {chapter}{\numberline {6}FSM - Finite State Machine}{7}{chapter.6}%
+\contentsline {chapter}{\numberline {6}FSM - Finite State Machine}{8}{chapter.6}%
 \contentsline {chapter}{\numberline {7}Beispiel Code}{8}{chapter.7}%
 \contentsline {chapter}{\numberline {8}Matlab-Befehle}{8}{chapter.8}%
 \contentsline {chapter}{\numberline {9}Hilfsblätter}{8}{chapter.9}%
