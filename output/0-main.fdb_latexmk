@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1766482818.70211 "/home/eric/git/HS25/IAUT_ZF/0-main.tex" "output/0-main.pdf" "0-main" 1766482820.48632 0
+["pdflatex"] 1766484280.90485 "/home/eric/git/HS25/IAUT_ZF/0-main.tex" "output/0-main.pdf" "0-main" 1766484282.67054 0
   "/etc/texmf/web2c/texmf.cnf" 1766315479.77022 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0800.600pk" 1766315921.87442 19852 351ce0ff09b86510587bbe622f5b59ed ""
   "/home/eric/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecit0900.600pk" 1766315599.46444 22964 1977bf1e2e4f77f49708df1e6139d6f7 ""
@@ -248,7 +248,7 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1766315484.80591 165012 f177baa1c39a3ebd62c3096a43521a0d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1766315796 7307019 91f702db9364f5e9afea62062f77fda1 ""
   "0-main.tex" 1766409320.86565 509 2526ad0acc9a950053f2c4c62f775fcd ""
-  "ZF.tex" 1766482816.82785 28162 899358e8f5dbf3ecc8f4fb1c5f4ed435 ""
+  "ZF.tex" 1766484280.78861 28999 fadaa188c8f02dbcef63a81f0900512c ""
   "config_ZF_hs24.tex" 1766479088.24927 5656 4992c1bc4275675d7496c376fdec4091 ""
   "hilfsblatt/Laplace1.pdf" 1766481915.08659 30687 22dcf826b189e887ef6e43a028a73010 ""
   "hilfsblatt/Laplace2.pdf" 1766481915.48959 34011 17f8af7d67e46ad174558fc62e781601 ""
@@ -270,10 +270,11 @@
   "img/Bildschirmfoto vom 2025-12-22 17-57-55.png" 1766422689.78556 51581 c1b77d1328f99d01bbb8e68ad0d571f2 ""
   "img/Bildschirmfoto vom 2025-12-23 09-55-58.png" 1766480174.19633 22248 16ec5f3ba2706265fb7ea8de96e9788e ""
   "img/Bildschirmfoto vom 2025-12-23 10-39-11.png" 1766482763.38267 26562 23034752ab701b988faf48d26f3a420e ""
-  "output/0-main.aux" 1766482820.39737 3186 967778de164c4861ed6524a49d5a343f "pdflatex"
-  "output/0-main.out" 1766482820.39837 8696 fccf522acc8cfabb167a132aa38e9215 "pdflatex"
-  "output/0-main.toc" 1766482820.40037 5277 d7eb46890912fe4e21a449eafae265c4 "pdflatex"
-  "output/ZF.aux" 1766482820.39545 9546 2a3fc3deb62afccd82f14bce8b231962 "pdflatex"
+  "img/Prozessmodellierung.pdf" 1766319360 21937 bc509b513a05b07b4de10fa46b0ceff3 ""
+  "output/0-main.aux" 1766484282.5796 3186 967778de164c4861ed6524a49d5a343f "pdflatex"
+  "output/0-main.out" 1766484282.5806 8879 1161dbaa4d14a4f7689e440de2d3b2ad "pdflatex"
+  "output/0-main.toc" 1766484282.5826 5366 e3ea203dbaf06447ad6573ea80ec09a8 "pdflatex"
+  "output/ZF.aux" 1766484282.5776 9675 cf7ad8752baf1d48dc268d2dbb1c5a3f "pdflatex"
   "output/_minted-0-main/0DB79AD9BAAAFFDF59DB4AFBA3E7627DF9751EEEE7198A81CBBB147E17CB6EEE.pygtex" 1766479090.23254 67 9d3613f1814e32c948b27d5048c8fdac ""
   "output/_minted-0-main/1159184937F1A52D70A06A50D63B5947F9751EEEE7198A81CBBB147E17CB6EEE.pygtex" 1766479089.68704 67 cba09431b6e5cadf65b5d308e7438f53 ""
   "output/_minted-0-main/1211A3C306E52CD7E54CDB1D416B3788F9751EEEE7198A81CBBB147E17CB6EEE.pygtex" 1766479090.86597 122 165c4d85bde5fb908ef2bd1bb2c3944a ""

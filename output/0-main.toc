@@ -58,11 +58,12 @@
 \contentsline {subsection}{\numberline {7.2.2}System Modus Enum}{9}{subsection.7.2.2}%
 \contentsline {subsection}{\numberline {7.2.3}Funktionsblock}{9}{subsection.7.2.3}%
 \contentsline {section}{\numberline {7.3}PT1 Prozess}{9}{section.7.3}%
-\contentsline {section}{\numberline {7.4}PT2 Prozess}{9}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Parameter Struct}{9}{subsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.4.2}Funktionsblock}{9}{subsection.7.4.2}%
+\contentsline {section}{\numberline {7.4}PT2 Prozess}{10}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Parameter Struct}{10}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Funktionsblock}{10}{subsection.7.4.2}%
 \contentsline {chapter}{\numberline {8}Matlab-Befehle}{10}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Simulink}{10}{section.8.1}%
-\contentsline {chapter}{\numberline {9}Hilfsblätter}{10}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Laplace Transformation}{10}{section.9.1}%
+\contentsline {section}{\numberline {8.1}Sprungantwort modellieren}{10}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Simulink}{10}{section.8.2}%
+\contentsline {chapter}{\numberline {9}Hilfsblätter}{11}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Laplace Transformation}{11}{section.9.1}%
 \contentsline {section}{\numberline {9.2}$z$-Transformation}{11}{section.9.2}%

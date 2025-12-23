@@ -829,7 +829,7 @@ out := (T/(T+tau))*signal + (tau/(T+tau))*prev_out;
 
 prev_out := out;
 \end{lstlisting}
-
+\newcolumn
 
 \section{PT2 Prozess}
 \subsection{Parameter Struct}
@@ -882,6 +882,8 @@ CASE Modus OF
 END_CASE
 \end{lstlisting}
 
+\newcolumn
+
 \chapter{Matlab-Befehle}
 \textnormal{Für die Auslegung und modellierung wurde in IAUT Matlab verwendet. Dabei wurden Tools wie der 'PID-Tuner' oder 'Siso-Tool' für die Auslegung der Regler eingesetzt. Grundsätzlich folgt der Reglerentwurf diesem Schema:}
 
@@ -892,6 +894,26 @@ END_CASE
     \item Prozessmodellierung (Sprungantwort parametrisieren, etc.)
     \item Regler mit Tool auslegen
 \end{enumerate}
+
+\textnormal{Kennengelernte Matlab Befehle sind:}
+
+\begin{lstlisting}
+margin(C*H/(1+H*C))  // Phasen und Gain Reserve closed loop
+
+num = [p0 0 0];
+den = [p1 p2 p3];
+H = tf(num,den,Ts); // Zeitdiskrete Uebertragungsfunktion
+
+y = lsim(H, U, t/1000); // Sprungantwort simulieren
+\end{lstlisting}
+
+\section{Sprungantwort modellieren}
+\textnormal{Um eine Sprungantwort zu modellieren, muss jeweils entschieden werden, wie der Sprung am besten simuliert werden kann. Der Sprung muss immer genullt werden (bei 0 starten) aber darf beim Aufnehmen nicht bei 0 starten. Entsprechend: Motor Bsp 500 rpm zu 1500 rmp. Dann -500 rechnen, um Sprung zu modellieren. Ein Modell eines Sprunges kann so aussehen:}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width =  \columnwidth]{img/Prozessmodellierung.pdf}
+\end{figure}
 
 \section{Simulink}
 \textnormal{Das Modell kann genau so nachgebaut werden, wie modelliert. Dann kann mittels diskreten PID-Regler den Regler ausgelegt werden.}
