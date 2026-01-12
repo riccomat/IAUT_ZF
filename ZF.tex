@@ -905,6 +905,9 @@ den = [p1 p2 p3];
 H = tf(num,den,Ts); // Zeitdiskrete Uebertragungsfunktion
 
 y = lsim(H, U, t/1000); // Sprungantwort simulieren
+
+stepz(num,den,Ts) // Sprungantwort
+freqz(num,den) // Frequenzgang
 \end{lstlisting}
 
 \section{Sprungantwort modellieren}
