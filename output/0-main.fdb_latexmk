@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1768208396.95677 "/home/eric/git/HS25/IAUT/IAUT_ZF/0-main.tex" "output/0-main.pdf" "0-main" 1768208398.78067 0
+["pdflatex"] 1768209310.64442 "/home/eric/git/HS25/IAUT/IAUT_ZF/0-main.tex" "output/0-main.pdf" "0-main" 1768209312.50912 0
   "/etc/texmf/web2c/texmf.cnf" 1766315479.77022 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/eric/git/HS25/IAUT/IAUT_ZF/0-main.tex" 1766409320.86565 509 2526ad0acc9a950053f2c4c62f775fcd ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -249,7 +249,7 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1766498160.10492 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1766315796 7307019 91f702db9364f5e9afea62062f77fda1 ""
   "0-main.tex" 1766409320.86565 509 2526ad0acc9a950053f2c4c62f775fcd ""
-  "ZF.tex" 1768208394.94865 29066 4a83e9a84267ef60a33734f22b2adbc6 ""
+  "ZF.tex" 1768209310.4705 29170 fe6c61553bf3d81db4712c828df65490 ""
   "config_ZF_hs24.tex" 1766479088.24927 5656 4992c1bc4275675d7496c376fdec4091 ""
   "hilfsblatt/Laplace1.pdf" 1766481915.08659 30687 22dcf826b189e887ef6e43a028a73010 ""
   "hilfsblatt/Laplace2.pdf" 1766481915.48959 34011 17f8af7d67e46ad174558fc62e781601 ""
@@ -272,10 +272,10 @@
   "img/Bildschirmfoto vom 2025-12-23 09-55-58.png" 1766480174.19633 22248 16ec5f3ba2706265fb7ea8de96e9788e ""
   "img/Bildschirmfoto vom 2025-12-23 10-39-11.png" 1766482763.38267 26562 23034752ab701b988faf48d26f3a420e ""
   "img/Prozessmodellierung.pdf" 1766319360 21937 bc509b513a05b07b4de10fa46b0ceff3 ""
-  "output/0-main.aux" 1768208398.67856 3186 967778de164c4861ed6524a49d5a343f "pdflatex"
-  "output/0-main.out" 1768208398.6805 8879 1161dbaa4d14a4f7689e440de2d3b2ad "pdflatex"
-  "output/0-main.toc" 1768208398.68156 5366 e3ea203dbaf06447ad6573ea80ec09a8 "pdflatex"
-  "output/ZF.aux" 1768208398.67777 9676 7bb592e6391f389ff7a2ade0df8dceec "pdflatex"
+  "output/0-main.aux" 1768209312.40949 3186 967778de164c4861ed6524a49d5a343f "pdflatex"
+  "output/0-main.out" 1768209312.41094 8879 1161dbaa4d14a4f7689e440de2d3b2ad "pdflatex"
+  "output/0-main.toc" 1768209312.41249 5366 e3ea203dbaf06447ad6573ea80ec09a8 "pdflatex"
+  "output/ZF.aux" 1768209312.4081 9676 7bb592e6391f389ff7a2ade0df8dceec "pdflatex"
   "output/_minted-0-main/0DB79AD9BAAAFFDF59DB4AFBA3E7627DF9751EEEE7198A81CBBB147E17CB6EEE.pygtex" 1766479090.23254 67 9d3613f1814e32c948b27d5048c8fdac ""
   "output/_minted-0-main/1159184937F1A52D70A06A50D63B5947F9751EEEE7198A81CBBB147E17CB6EEE.pygtex" 1766479089.68704 67 cba09431b6e5cadf65b5d308e7438f53 ""
   "output/_minted-0-main/1211A3C306E52CD7E54CDB1D416B3788F9751EEEE7198A81CBBB147E17CB6EEE.pygtex" 1766479090.86597 122 165c4d85bde5fb908ef2bd1bb2c3944a ""
