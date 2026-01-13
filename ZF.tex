@@ -31,6 +31,7 @@
     \item $0V-10V$
     \item $4mA - 20mA$
 \end{itemize}
+
 \newcolumn
 
 \subsection{Klemmen}
@@ -52,6 +53,7 @@
     \centering
     \includegraphics[width =  0.6\columnwidth]{img/Bild_2025-09-23_094725052.png}
 \end{figure}
+
 \newcolumn
 
 \chapter{SPS}
@@ -111,6 +113,8 @@
     \item Ethernet/IP
 \end{itemize}
 
+\newcolumn
+
 \section{Diskrete Regelungsaufgabe}
 \textnormal{Eine diskrete Regelungsaufgabe benötigt Zeit. Über Messung der Sensorwerte, Vergleich mit Sollwert etc. verzögern die Reaktionszeit des Reglers drastisch.}
 
@@ -146,6 +150,8 @@
 
 \textnormal{Dieses Kapitel fasst den Aufbau und Syntax der SPS-Programmiersprache ST zusammen.}
 
+\newcolumn
+
 \section{Grundaufbau}
 \textnormal{Der Aufbau eines Programmes/Funktionsblockes oder Funktion ist immer in zwei Bereiche aufgeteilt: Deklaration und Implementation. Im Deklarationsteil werden alle Inputs, Outputs deklariert und ggf. initialisiert. In der Implementation wird der eigentliche Code geschrieben. Wichtig: die Implementation wird in jedem Clock Zyklus wiederholt.}
 
@@ -176,7 +182,7 @@ ELSE
     tmp := iVarIn;
 END_IF
 \end{lstlisting}
-\newcolumn
+
 
 \subsection{Programm}
 \textnormal{Programme können als Funktionen aufgerufen werden und besitzen keinen Rückgabewert.}
@@ -210,6 +216,8 @@ IF bTrig = TRUE THEN
 END_IF
 \end{lstlisting}
 
+\newcolumn
+
 \subsection{Funktion}
 \textnormal{Eine Funktion kann ohne Instanzierung verwendet werden. Eine Funktion besitzt keine statische Werte, dafür einen Rückgabewert, welcher auf den Funktionsnamen zugewiesen wird.}
 
@@ -223,7 +231,7 @@ END_VAR
 iTmp := iTime;
 fFunc := iTime / iT;
 \end{lstlisting}
-\newcolumn
+
 
 \section{Variablentypen}
 
@@ -283,6 +291,8 @@ END_STRUCT
 END_TYPE
 \end{lstlisting}
 
+\newcolumn
+
 \subsubsection{Enumeration}
 
 \begin{lstlisting}
@@ -295,7 +305,7 @@ TYPE eSystemState:
 ) := init; // default state
 END_TYPE
 \end{lstlisting}
-\newcolumn
+
 
 \subsection{Globale Variablen Liste (GVL)}
 \textnormal{Die GVL deklariert Variablen, welche in jedem Programm, Funktionsblock und Funktion aufrufbar. Vielfach machts Sinn die In-/Outputs, welche mit der Hardware kommunizieren in einer GVL zu deklarieren.}
@@ -351,6 +361,8 @@ END_CASE
 \section{Schleifen}
 \textnormal{Wie in C gibt es in TwinCat Schleifen. Dabei ist es von zentraler Bedeutung, dass diese Schleife nicht Endlos ist und eine Abbruchbedingung enthält. Ansonsten kann es vorkommen, dass auf die SPS nicht mehr zugegriffen werden kann. Die verschiedenen Schleifen werden hier aufgeführt.}
 
+\newcolumn
+
 \subsection{WHILE}
 \begin{tcolorbox}[colback=VeryLightOrange,colframe=DarkOrange,title=WHILE-Schleife]
 \textnormal{Sofern die Bedingung beim ersten Erreichen nicht zutrifft, wird der Inhalt der Schleife nicht ausgeführt.}
@@ -362,7 +374,7 @@ WHILE iCounter <> 0 DO
     iCounter := iCounter - 1;
 END_WHILE
 \end{lstlisting}
-\newcolumn
+
 
 \subsection{REPEAT}
 \begin{tcolorbox}[colback=VeryLightOrange,colframe=DarkOrange,title=REPEAT-Schleife]
@@ -418,6 +430,8 @@ res := ROL(bByte,3);    // Circular Shift Right
 
 \textnormal{Die Shift-Operationen können mit allen gängigen Datentypen verwendet werden.}
 
+\newcolumn
+
 \section{Limit}
 \textnormal{Die Limit-Funktion limitiert die Eingangsvariable innerhalb von einer Minimal- und Maximalwert. Die Funktion kann wie folgt verwendet werden:}
 
@@ -425,7 +439,7 @@ res := ROL(bByte,3);    // Circular Shift Right
 rUsat := LIMIT(umin, rU, umax);
 // rU wird von umin und umax limitiert
 \end{lstlisting}
-\newcolumn
+
 
 \section{Timer}
 \textnormal{Verschiedene Timer Module können direkt aus TwinCat instanziiert werden. Diese haben jeweils verschiedene Verhaltensmuster und sind für andere Anwendungen nützlich.}
@@ -460,6 +474,8 @@ fbTON(IN := bTrig, PT := T#500ms);
 bOut := fbTON.Q;
 \end{lstlisting}
 
+\newcolumn
+
 \subsection{Timer Pulse Generator (TP)}
 \begin{figure}[H]
     \centering
@@ -474,7 +490,7 @@ END_VAR
 fbTP(IN := bTrig, PT := T#500ms);
 bOut := fbTP.Q;
 \end{lstlisting}
-\newcolumn
+
 
 \chapter{Digitale Regelung}
 \textnormal{Für Automationsanwendungen werden sehr häufig PID-Regler verwendet. Für eine digitale Regelung muss der Prozess und der Regler diskretisiert werden. Verschiedene Diskretisierungsmethoden existieren.}
@@ -499,6 +515,8 @@ bOut := fbTP.Q;
     s = \frac{2}{T}\frac{z-1}{z+1}
 \end{equation*}
 
+\newcolumn
+
 \section{PT1-Prozess}
 
 \begin{figure}[H]
@@ -514,7 +532,7 @@ bOut := fbTP.Q;
 \begin{equation*}
     \text{Mit: }a_1 = \frac{T_S}{T_S+\tau} \quad a_2 = \frac{\tau}{T_S + \tau}
 \end{equation*}
-\newcolumn
+
 
 \section{PT2-Prozess}
 \begin{figure}[H]
@@ -534,6 +552,8 @@ bOut := fbTP.Q;
 \begin{equation*}
     \text{Mit: }a_1 = 1+2d\omega_0T_s + \omega_0^2 \quad a_2 = -2-2d\omega_0T_s \quad a_3 = T_s^2\omega_0^2
 \end{equation*}
+
+\newcolumn
 
 \section{Diskreter PID-Regler}
 
@@ -601,6 +621,8 @@ bOut := fbTP.Q;
 usat := LIMIT(umin, u, umax);
 \end{lstlisting}
 
+\newcolumn
+
 \subsection{Antireset-Windup (ARW)}
 
 \begin{figure}[H]
@@ -613,7 +635,7 @@ usat := LIMIT(umin, u, umax);
     u_I[k] = u_I[k-1]+\frac{k_PT_s}{T_i}e[k] + \frac{T_s}{T_r}(u_{sat}[k]-u[k])
 \end{equation*}
 \textnormal{Wobei $u[k]$ die gesamte PID-Stellgrösse ohne Sättigung ist.}
-\newcolumn
+
 
 \chapter{FSM - Finite State Machine}
 \textnormal{Finite State Machines oder FSM sind Zustandsmaschinen, welche je nach Zustand Ein- und Ausgänge anders behandeln. Wichtig dabei sind die Übergangsbedinungen, zu welchen der Zustand wechselt. Dargestellt werden sie in Zustandsdiagrammen. Ein einfaches Diagramm:}
@@ -672,7 +694,7 @@ ELSE
 END_CASE
 \end{lstlisting}
 
-\newcolumn
+
 
 \chapter{Beispiel Code}
 \textnormal{Ein paar Beispiel Codes können hier entnommen werden.}
@@ -691,6 +713,8 @@ STRUCT
 END_STRUCT
 END_TYPE
 \end{lstlisting}
+
+\newcolumn
 
 \subsection{Funktionsblock}
 
@@ -734,7 +758,7 @@ END_IF
 // store signal for next cycle
 bPrevSignal := bSignal;
 \end{lstlisting}
-\newcolumn
+
 
 \section{PID-Regler}
 \subsection{Parameter Struct}
@@ -752,6 +776,8 @@ STRUCT
 END_STRUCT
 END_TYPE
 \end{lstlisting}
+
+\newcolumn
 
 \subsection{System Modus Enum}
 \begin{lstlisting}
@@ -846,7 +872,7 @@ out := (T/(T+tau))*signal + (tau/(T+tau))*prev_out;
 
 prev_out := out;
 \end{lstlisting}
-\newcolumn
+
 
 \section{PT2 Prozess}
 \subsection{Parameter Struct}
@@ -899,7 +925,7 @@ CASE Modus OF
 END_CASE
 \end{lstlisting}
 
-\newcolumn
+
 
 \chapter{Matlab-Befehle}
 \textnormal{Für die Auslegung und modellierung wurde in IAUT Matlab verwendet. Dabei wurden Tools wie der 'PID-Tuner' oder 'Siso-Tool' für die Auslegung der Regler eingesetzt. Grundsätzlich folgt der Reglerentwurf diesem Schema:}
@@ -935,6 +961,8 @@ freqz(num,den) // Frequenzgang
     \includegraphics[width =  \columnwidth]{img/Prozessmodellierung.pdf}
 \end{figure}
 
+\newcolumn
+
 \section{Simulink}
 \textnormal{Das Modell kann genau so nachgebaut werden, wie modelliert. Dann kann mittels diskreten PID-Regler den Regler ausgelegt werden.}
 \begin{figure}[H]
@@ -954,6 +982,7 @@ freqz(num,den) // Frequenzgang
     \centering
     \includegraphics[width =  \columnwidth]{hilfsblatt/Laplace2.pdf}
 \end{figure}
+
 \newcolumn
 
 \section{$z$-Transformation}
