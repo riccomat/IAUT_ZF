@@ -321,6 +321,29 @@ rRealVal := INT_TO_REAL(iVal);
 
 \section{Conditional Statements}
 
+\begin{tcolorbox}[colback=VeryLightOrange,colframe=DarkOrange,title=Conditional Operatoren]
+\textnormal{Wie in C gibt es in ST mehrere Conditional Operatoren. Diese sind wiefolgt:}
+
+\begin{table}[H]
+    \centering
+    \tabularcount
+    \begin{tabular}{l l | l l}
+        \mintinline{text}{=} & ist gleich & \mintinline{text}{AND} & und\\
+        \mintinline{text}{<>} & ist ungleich & \mintinline{text}{OR} & oder\\
+        \mintinline{text}{<} & kleiner als & \mintinline{text}{NOT} & 'nicht'\\
+        \mintinline{text}{>} & grösser als & \mintinline{text}{XOR} & exklusiv oder\\
+        \mintinline{text}{<=} & kleiner gleich&\\
+        \mintinline{text}{>=} & grösser gleich&
+    \end{tabular}
+\end{table}
+
+\textnormal{Diese Operatoren können kombiniert angewendet werden:}
+\begin{lstlisting}[]
+IF motor AND NOT fault THEN
+IF (a = b) AND (x <> y OR NOT z) THEN
+\end{lstlisting}
+\end{tcolorbox}
+
 \subsection{If/Else}
 \begin{lstlisting}[]
 IF <cond1> THEN
@@ -344,6 +367,8 @@ ELSE
 END_CASE
 \end{lstlisting}
 
+\newcolumn
+
 \textnormal{Die Switch-Bedingung kann auch für Enum-Typen gebraucht werden:}
 \begin{lstlisting}[]
 CASE eState OF
@@ -360,8 +385,6 @@ END_CASE
 
 \section{Schleifen}
 \textnormal{Wie in C gibt es in TwinCat Schleifen. Dabei ist es von zentraler Bedeutung, dass diese Schleife nicht Endlos ist und eine Abbruchbedingung enthält. Ansonsten kann es vorkommen, dass auf die SPS nicht mehr zugegriffen werden kann. Die verschiedenen Schleifen werden hier aufgeführt.}
-
-\newcolumn
 
 \subsection{WHILE}
 \begin{tcolorbox}[colback=VeryLightOrange,colframe=DarkOrange,title=WHILE-Schleife]
@@ -404,7 +427,7 @@ EXIT        // Ausbruch aus aktuellem Loop
 CONTINUE    // Direkter Sprung zu Loop Anfang
 \end{lstlisting}
 
-
+\newcolumn
 
 \chapter{TwinCat}
 \textnormal{TwinCat ist die Entwicklungsumgebung von Beckoff für deren SPS Systeme. TwinCat liefert diverse Funktionen vorgefertigt für den Benutzer. In diesem Kapitel werden die relevantesten aufegelistet.}
@@ -429,8 +452,6 @@ res := ROL(bByte,3);    // Circular Shift Right
 \end{lstlisting}
 
 \textnormal{Die Shift-Operationen können mit allen gängigen Datentypen verwendet werden.}
-
-\newcolumn
 
 \section{Limit}
 \textnormal{Die Limit-Funktion limitiert die Eingangsvariable innerhalb von einer Minimal- und Maximalwert. Die Funktion kann wie folgt verwendet werden:}
@@ -459,6 +480,8 @@ fbTOF(IN := bTrig, PT := T#500ms);
 bOut := fbTOF.Q;
 \end{lstlisting}
 
+\newcolumn
+
 \subsection{Timer On-Delay (TON)}
 \begin{figure}[H]
     \centering
@@ -473,8 +496,6 @@ END_VAR
 fbTON(IN := bTrig, PT := T#500ms);
 bOut := fbTON.Q;
 \end{lstlisting}
-
-\newcolumn
 
 \subsection{Timer Pulse Generator (TP)}
 \begin{figure}[H]
