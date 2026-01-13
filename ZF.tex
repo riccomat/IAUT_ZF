@@ -258,6 +258,8 @@ END_VAR
 \subsection{DUT - Data Unit Type}
 \textnormal{Über DUT können benutzerdefinierte Datentypen angelegt werden. Die relevanten sind \mintinline{ST}{STRUCT} und \mintinline{ST}{ENUM}. Durch diese Typen kann ein Programm bedeutend lesbarer gestaltet werden. Für die Erstellung eines DUTs wird ein neues File in der DUT Ordnerstruktur erstellt. Die Definition geht wie folgt:}
 
+\subsubsection{Struct}
+
 \begin{lstlisting}
 // Struct
 TYPE stDataType:
@@ -268,6 +270,8 @@ STRUCT
 END_STRUCT
 END_TYPE
 \end{lstlisting}
+
+\subsubsection{Enumeration}
 
 \begin{lstlisting}
 // Enumeration
@@ -664,7 +668,7 @@ END_CASE
 \section{Flankendetektor}
 \textnormal{Damit ein Button nur einmal als gedrückt wahrgenommen wird, muss eine Flankendetektion implementiert werden. So kann auch darauf reagiert werden, wenn die Taste losgelassen wird. Für die Lesbarkeit, wird ein Enumerationstyp definiert.}
 
-\subsection{Enumeration}
+\subsection{Struct}
 \begin{lstlisting}
 // fuer die Button Flanken
 TYPE sButtonState :
