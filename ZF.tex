@@ -110,7 +110,19 @@
     \item EtherCAT (nicht TCP basierend)
     \item Ethernet/IP
 \end{itemize}
-\newcolumn
+
+\section{Diskrete Regelungsaufgabe}
+\textnormal{Eine diskrete Regelungsaufgabe benötigt Zeit. Über Messung der Sensorwerte, Vergleich mit Sollwert etc. verzögern die Reaktionszeit des Reglers drastisch.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width =  0.8\columnwidth]{sc/diskreterRegler.pdf}
+\end{figure}
+
+\textnormal{Es gilt dabei die folgende Bedingung:}
+\begin{equation*}
+    T_{AD} + T_C + T_{DA} << T
+\end{equation*}
 
 \chapter{Programmierung}
 \begin{tcolorbox}[colback=VeryLightOrange,colframe=DarkOrange,title=Definition SPS-Programmierung]

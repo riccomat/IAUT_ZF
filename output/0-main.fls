@@ -438,6 +438,11 @@ INPUT ./img/Bild_2025-09-23_095610157.png
 INPUT ./img/Bild_2025-09-23_095610157.png
 INPUT ./img/Bild_2025-09-23_095610157.png
 INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT ./sc/diskreterRegler.pdf
+INPUT ./sc/diskreterRegler.pdf
+INPUT ./sc/diskreterRegler.pdf
+INPUT ./sc/diskreterRegler.pdf
+INPUT ./sc/diskreterRegler.pdf
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
