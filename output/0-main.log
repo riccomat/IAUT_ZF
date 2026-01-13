@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.21)  13 JAN 2026 09:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.21)  13 JAN 2026 09:43
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1106,10 +1106,10 @@ Overfull \hbox (5.57693pt too wide) in paragraph at lines 3--260
 (./output/_minted-0-main/0DB79AD9BAAAFFDF59DB4AFBA3E7627DF9751EEEE7198A81CBBB147E17CB6EEE.pygtex)
 \openout4 = `0-main.pyg'.
 
- (./output/_minted-0-main/6EF60C1DC88982712D8C6FE99774ACD5F9751EEEE7198A81CBBB147E17CB6EEE.pygtex)
+ (./output/_minted-0-main/6EF60C1DC88982712D8C6FE99774ACD5153F5D3E681FB8487D57C54A96A9B38F.pygtex)
 \openout4 = `0-main.pyg'.
 
- (./output/_minted-0-main/9EA72268D6D96602C3CBCABE5BD88BF9F9751EEEE7198A81CBBB147E17CB6EEE.pygtex)
+ (./output/_minted-0-main/9EA72268D6D96602C3CBCABE5BD88BF9153F5D3E681FB8487D57C54A96A9B38F.pygtex)
 \openout4 = `0-main.pyg'.
 
  (./output/_minted-0-main/F0C5F1ACC0609CFFC742299CC6ABF468F9751EEEE7198A81CBBB147E17CB6EEE.pygtex)
@@ -1118,10 +1118,10 @@ Overfull \hbox (5.57693pt too wide) in paragraph at lines 3--260
  (./output/_minted-0-main/884AA6090D8ECDE0E115BE428359BFBFF9751EEEE7198A81CBBB147E17CB6EEE.pygtex)
 \openout4 = `0-main.pyg'.
 
- (./output/_minted-0-main/23FDAB3078034E2270B4DAB8C8520275F9751EEEE7198A81CBBB147E17CB6EEE.pygtex)
+ (./output/_minted-0-main/23FDAB3078034E2270B4DAB8C8520275153F5D3E681FB8487D57C54A96A9B38F.pygtex)
 \openout4 = `0-main.pyg'.
 
- (./output/_minted-0-main/681E0D277E4AE4F4AB7EA6B802283A1EF9751EEEE7198A81CBBB147E17CB6EEE.pygtex)
+ (./output/_minted-0-main/681E0D277E4AE4F4AB7EA6B802283A1E153F5D3E681FB8487D57C54A96A9B38F.pygtex)
 \openout4 = `0-main.pyg'.
 
  (./output/_minted-0-main/F77372866466A315EB4B334FB0F9EE58F9751EEEE7198A81CBBB147E17CB6EEE.pygtex)
@@ -1130,27 +1130,27 @@ Overfull \hbox (5.57693pt too wide) in paragraph at lines 3--260
  (./output/_minted-0-main/470347CD2AF9E77FCB4F25A4B26701CEF9751EEEE7198A81CBBB147E17CB6EEE.pygtex)
 \openout4 = `0-main.pyg'.
 
- (./output/_minted-0-main/2860FE9CCF50734D73DE4527964CA761F9751EEEE7198A81CBBB147E17CB6EEE.pygtex)
+ (./output/_minted-0-main/2860FE9CCF50734D73DE4527964CA761153F5D3E681FB8487D57C54A96A9B38F.pygtex)
 Overfull \hbox (5.46297pt too wide) in paragraph at lines 3--265
 []|[]| 
  []
 
 \openout4 = `0-main.pyg'.
 
-(./output/_minted-0-main/A4EDFF1C37460C3A32CDC30E04F2661EF9751EEEE7198A81CBBB147E17CB6EEE.pygtex)
+(./output/_minted-0-main/A4EDFF1C37460C3A32CDC30E04F2661E153F5D3E681FB8487D57C54A96A9B38F.pygtex)
 \openout4 = `0-main.pyg'.
 
  (./output/_minted-0-main/7F154CE96D8C8A478142FCA42D210FA7F9751EEEE7198A81CBBB147E17CB6EEE.pygtex)
 \openout4 = `0-main.pyg'.
 
- (./output/_minted-0-main/5B28FF19AEE7CF6BA8923853898255B5F9751EEEE7198A81CBBB147E17CB6EEE.pygtex)
+ (./output/_minted-0-main/5B28FF19AEE7CF6BA8923853898255B5153F5D3E681FB8487D57C54A96A9B38F.pygtex)
 Overfull \hbox (1.214pt too wide) in paragraph at lines 3--266
 []|[]| 
  []
 
 \openout4 = `0-main.pyg'.
 
-(./output/_minted-0-main/3F9B413AB863817A7CCF114D63FBCA93F9751EEEE7198A81CBBB147E17CB6EEE.pygtex)
+(./output/_minted-0-main/3F9B413AB863817A7CCF114D63FBCA93153F5D3E681FB8487D57C54A96A9B38F.pygtex)
 Overfull \hbox (5.42542pt too wide) in paragraph at lines 3--266
 []|[]| 
  []
@@ -1292,15 +1292,15 @@ runsystem(rm output//0-main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 31494 strings out of 476056
- 606034 string characters out of 5791603
+ 31498 strings out of 476056
+ 606138 string characters out of 5791603
  2288975 words of memory out of 5000000
- 52353 multiletter control sequences out of 15000+600000
+ 52357 multiletter control sequences out of 15000+600000
  579220 words of font info for 87 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 88i,17n,120p,1062b,2768s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,14n,120p,1062b,2768s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfit0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on output/0-main.pdf (12 pages, 2307249 bytes).
+Output written on output/0-main.pdf (12 pages, 2306764 bytes).
 PDF statistics:
  1267 PDF objects out of 1440 (max. 8388607)
  1073 compressed objects within 11 object streams
