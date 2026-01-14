@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1768393554.88994 "/home/eric/git/HS25/IAUT/IAUT_ZF/0-main.tex" "output/0-main.pdf" "0-main" 1768393556.8768 0
+["pdflatex"] 1768395062.33715 "/home/eric/git/HS25/IAUT/IAUT_ZF/0-main.tex" "output/0-main.pdf" "0-main" 1768395064.18471 0
   "/etc/texmf/web2c/texmf.cnf" 1766315479.77022 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/eric/git/HS25/IAUT/IAUT_ZF/0-main.tex" 1768393554.73345 602 985674eec2bfb9615a3046e22881b628 ""
+  "/home/eric/git/HS25/IAUT/IAUT_ZF/0-main.tex" 1768395062.16743 597 79cb483a1740d7e7e62d034591a648e3 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx0800.tfm" 1136768653 3584 269b66e921ba58750c12f7f1c8ea3ebd ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -248,7 +248,7 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1766498160.10492 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1766315796 7307019 91f702db9364f5e9afea62062f77fda1 ""
-  "0-main.tex" 1768393554.73345 602 985674eec2bfb9615a3046e22881b628 ""
+  "0-main.tex" 1768395062.16743 597 79cb483a1740d7e7e62d034591a648e3 ""
   "ZF.tex" 1768294868.57115 30613 cf2f3a8c7ce0acc2f6514e2ed1036a2b ""
   "config_ZF_hs24.tex" 1768294868.57215 5585 a1ce7159048f541eac61c6215cade918 ""
   "hilfsblatt/Laplace1.pdf" 1766481915.08659 30687 22dcf826b189e887ef6e43a028a73010 ""
@@ -272,10 +272,10 @@
   "img/Bildschirmfoto vom 2025-12-23 09-55-58.png" 1766480174.19633 22248 16ec5f3ba2706265fb7ea8de96e9788e ""
   "img/Bildschirmfoto vom 2025-12-23 10-39-11.png" 1766482763.38267 26562 23034752ab701b988faf48d26f3a420e ""
   "img/Prozessmodellierung.pdf" 1766319360 21937 bc509b513a05b07b4de10fa46b0ceff3 ""
-  "output/0-main.aux" 1768393556.75938 3936 fa66fae5b21bdbdb93a6fad02f5aa48f "pdflatex"
-  "output/0-main.out" 1768393556.7607 9037 763fc963d55f61689a4a753aa7f11442 "pdflatex"
-  "output/0-main.toc" 1768393556.76238 5574 05c65bb6b7f3159d34ddecb8a8cb923c "pdflatex"
-  "output/ZF.aux" 1768393556.75682 10007 2fce0e3bf00e4b94fc55597bf4197e5a "pdflatex"
+  "output/0-main.aux" 1768395064.08125 3936 fa66fae5b21bdbdb93a6fad02f5aa48f "pdflatex"
+  "output/0-main.out" 1768395064.0829 9037 763fc963d55f61689a4a753aa7f11442 "pdflatex"
+  "output/0-main.toc" 1768395064.08525 5574 05c65bb6b7f3159d34ddecb8a8cb923c "pdflatex"
+  "output/ZF.aux" 1768395064.07903 10007 2fce0e3bf00e4b94fc55597bf4197e5a "pdflatex"
   "output/_minted-0-main/0DB79AD9BAAAFFDF59DB4AFBA3E7627DF9751EEEE7198A81CBBB147E17CB6EEE.pygtex" 1766479090.23254 67 9d3613f1814e32c948b27d5048c8fdac ""
   "output/_minted-0-main/1159184937F1A52D70A06A50D63B5947F9751EEEE7198A81CBBB147E17CB6EEE.pygtex" 1766479089.68704 67 cba09431b6e5cadf65b5d308e7438f53 ""
   "output/_minted-0-main/1211A3C306E52CD7E54CDB1D416B3788F9751EEEE7198A81CBBB147E17CB6EEE.pygtex" 1766479090.86597 122 165c4d85bde5fb908ef2bd1bb2c3944a ""
