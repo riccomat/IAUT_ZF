@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.2.9 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.2.9" pages="2">
   <diagram name="Seite-1" id="tTZkqVuvVI9wbK69gfQ7">
     <mxGraphModel dx="983" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
       <root>
@@ -33,6 +33,62 @@
         </mxCell>
         <mxCell id="Bd8AHyUeoRjLn9OTGI9I-5" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;eSystemState.init&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="180" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="2iBwwW3Exg-aCHSgtfcB" name="Seite-2">
+    <mxGraphModel dx="778" dy="447" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="640" pageHeight="340" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DwBpAt3nqFy88ygYgbck-1" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="80" y="210" as="sourcePoint" />
+            <mxPoint x="80" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DwBpAt3nqFy88ygYgbck-2" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="70" y="200" as="sourcePoint" />
+            <mxPoint x="520" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DwBpAt3nqFy88ygYgbck-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="$$t$$" vertex="1">
+          <mxGeometry height="40" width="60" x="500" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="DwBpAt3nqFy88ygYgbck-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;rotation=-90;" value="AD-Wandlung" vertex="1">
+          <mxGeometry height="40" width="80" x="60" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="DwBpAt3nqFy88ygYgbck-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;rotation=-90;" value="Sollwert" vertex="1">
+          <mxGeometry height="40" width="80" x="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="DwBpAt3nqFy88ygYgbck-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;rotation=-90;" value="Fehler berechnen" vertex="1">
+          <mxGeometry height="40" width="80" x="140" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="DwBpAt3nqFy88ygYgbck-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;rotation=-90;" value="(PID-) Regler" vertex="1">
+          <mxGeometry height="80" width="80" x="200" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="DwBpAt3nqFy88ygYgbck-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;rotation=-90;" value="DA-Umsetzung" vertex="1">
+          <mxGeometry height="40" width="80" x="260" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="DwBpAt3nqFy88ygYgbck-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;rotation=-90;" value="Other Stuff" vertex="1">
+          <mxGeometry height="40" width="80" x="300" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="DwBpAt3nqFy88ygYgbck-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=-90;" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;$$y(t)\rightarrow y[k]$$&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="60" x="70" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="DwBpAt3nqFy88ygYgbck-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=-90;" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;$$e[k] = y_s[k] - y[k]$$&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="60" x="150" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="DwBpAt3nqFy88ygYgbck-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=-90;" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;$$y_s[k]$$&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="60" x="110" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="DwBpAt3nqFy88ygYgbck-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=-90;" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;$$u[k] = \text{PID}(e[k])$$&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="60" x="210" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="DwBpAt3nqFy88ygYgbck-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=-90;" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;$$y[k]\rightarrow y(t)$$&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="60" x="270" y="210" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
